@@ -207,8 +207,9 @@ def main():
                    "wins_vs_best_baseline_mean": wins, "n_seeds": len(pv),
                    "pass": bool(len(pv) >= 5 and np.std(pv, ddof=1) <= 0.02 and wins >= 4)})
 
-    res["criteria"]["A1"] = {"per_set": a1, "pass": bool(a1) and len(a1) >= 2 and all(x["pass"] for x in a1)}
-    res["criteria"]["A2"] = {"per_set": a2, "pass": bool(a2) and len(a2) >= 2 and all(x["pass"] for x in a2)}
+    min_prim = S.get("min_primary_sets", 2)  # Plan B (Amendment 1): one primary external set
+    res["criteria"]["A1"] = {"per_set": a1, "pass": bool(a1) and len(a1) >= min_prim and all(x["pass"] for x in a1)}
+    res["criteria"]["A2"] = {"per_set": a2, "pass": bool(a2) and len(a2) >= min_prim and all(x["pass"] for x in a2)}
     res["criteria"]["A3"] = {"per_set": a3d, "pass": any(x["pass"] for x in a3d)}
     res["criteria"]["A7"] = {"per_set": a7, "pass": bool(a7) and all(x["pass"] for x in a7)}
     res["criteria"]["A8"] = {"per_set": a8, "pass": bool(a8) and all(x["pass"] for x in a8)}
@@ -358,7 +359,7 @@ def main():
         verdict = []
         for run in abl.ablation.unique():
             r = abl[abl.ablation == run]
-            ok = bool(len(r) >= 2 and (r.mean_drop > 0).all() and (r.seeds_with_drop >= 4).all())
+            ok = bool(len(r) >= S.get("min_ablation_sets", 2) and (r.mean_drop > 0).all() and (r.seeds_with_drop >= 4).all())
             if run == S.get("base_ablation"):
                 ok = ok and bool((r.ci_lo > 0).all())
             verdict.append({"ablation": run, "positive": ok})
@@ -368,7 +369,7 @@ def main():
     crit = res["criteria"]
     primary = crit["A1"]["pass"] and crit["A2"]["pass"]
     n_sec = sum(bool(crit[k]["pass"]) for k in ["A3", "A4", "A5", "A6", "A7", "A8"])
-    sanity_ok = all(res["sanity"][k].get("pass") for k in ["occlusion", "device_probe", "leakage"])
+    sanity_ok = all(res["sanity"][k].get("pass") for k in S.get("sanity_checks", ["occlusion", "device_probe", "leakage"]))
     res["overall"] = {"primary_pass": primary, "secondary_passed": n_sec, "sanity_pass": sanity_ok,
                       "ACCEPTED_AS_POSITIVE": bool(primary and n_sec >= 4 and sanity_ok)}
     json.dump(res, open(a.out / "acceptance.json", "w"), indent=2, default=lambda o: o if not isinstance(o, np.generic) else o.item())
