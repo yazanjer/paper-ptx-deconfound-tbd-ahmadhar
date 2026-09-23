@@ -1,0 +1,4 @@
+base: ../base.yaml
+name: bl_groupdro
+audit: true
+train: {group_dro: true}
