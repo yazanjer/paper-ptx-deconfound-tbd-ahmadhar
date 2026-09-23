@@ -1,0 +1,9 @@
+{
+  "title": "ptx-deconfound: code, frozen splits, predictions and results for untreated pneumothorax detection",
+  "upload_type": "software",
+  "description": "Code, pre-registration, frozen patient-level splits, per-image predictions for every model and seed, statistical outputs and acceptance report for the study 'Seeing the air, not the tube'. Source images are not redistributed; see README for dataset access.",
+  "creators": [{"name": "Aljeroudi, Yazan"}],
+  "license": "MIT",
+  "keywords": ["pneumothorax", "chest radiograph", "shortcut learning", "chest tube", "deep learning", "benchmark"],
+  "access_right": "open"
+}
