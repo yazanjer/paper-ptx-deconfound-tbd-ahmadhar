@@ -1,0 +1,6 @@
+base: ../base.yaml
+name: pilot_full
+audit: true
+model: {aux_tube_seg: true, adv_device: true, mask_pool: true}
+train: {inpaint_p: 0.5}
+eval: {sets: []}
