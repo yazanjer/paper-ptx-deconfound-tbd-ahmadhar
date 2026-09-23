@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "ptx-deconfound: device-stratified, size-aware benchmark and deconfounded model for untreated pneumothorax detection"
+message: "If you use this software or its results, please cite it as below."
+type: software
+authors:
+  - family-names: Aljeroudi
+    given-names: Yazan
+license: MIT
+repository-code: "https://github.com/yazanjer/ptx-deconfound"
+keywords: [pneumothorax, chest radiograph, shortcut learning, chest tube, deep learning, benchmark]
