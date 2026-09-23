@@ -4,7 +4,6 @@ __pycache__/
 *.pth
 *.ckpt
 results/runs/**/feats_*.npz
-results/mask_checks/
 /data/
 /raw/
 .pytest_cache/
