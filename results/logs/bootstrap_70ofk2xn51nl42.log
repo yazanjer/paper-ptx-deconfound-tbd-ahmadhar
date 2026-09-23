@@ -81,3 +81,17 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 /usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
   warnings.warn(
 [pilot_nih_adv s0] ep0 cls=0.5189 adv=0.5993 val_auroc=0.8526 val_sens95=0.5034 val_sens95_untreated=0.0538 minutes=0.7415
+[pilot_nih_adv s0] ep1 cls=0.4293 adv=0.6583 val_auroc=0.8786 val_sens95=0.5103 val_sens95_untreated=0.2846 minutes=1.4808
+[pilot_nih_adv s0] ep2 cls=0.3465 adv=0.6029 val_auroc=0.8734 val_sens95=0.5604 val_sens95_untreated=0.2462 minutes=2.2179
+[pilot_nih_adv s0] ep3 cls=0.2767 adv=0.6337 val_auroc=0.9046 val_sens95=0.6879 val_sens95_untreated=0.4077 minutes=2.9427
+[pilot_nih_adv s0] ep4 cls=0.2202 adv=0.6212 val_auroc=0.8944 val_sens95=0.6606 val_sens95_untreated=0.3615 minutes=3.6910
+[pilot_nih_adv s0] ep5 cls=0.1927 adv=0.6338 val_auroc=0.8796 val_sens95=0.5945 val_sens95_untreated=0.4615 minutes=4.4276
+[pilot_nih_adv s0] ep6 cls=0.1594 adv=0.6638 val_auroc=0.8958 val_sens95=0.6492 val_sens95_untreated=0.3385 minutes=5.1799
+[pilot_nih_adv s0] ep7 cls=0.1185 adv=0.6582 val_auroc=0.8781 val_sens95=0.5763 val_sens95_untreated=0.4000 minutes=5.9145
+[pilot_nih_adv s0] ep8 cls=0.0900 adv=0.6536 val_auroc=0.8811 val_sens95=0.6128 val_sens95_untreated=0.3385 minutes=6.6476
+[pilot_nih_adv s0] ep9 cls=0.0638 adv=0.6564 val_auroc=0.8913 val_sens95=0.6310 val_sens95_untreated=0.4846 minutes=7.3749
+[pilot_nih_adv s0] ep10 cls=0.0530 adv=0.6599 val_auroc=0.9018 val_sens95=0.6606 val_sens95_untreated=0.4308 minutes=8.1179
+[pilot_nih_adv s0] ep11 cls=0.0387 adv=0.6700 val_auroc=0.8963 val_sens95=0.6674 val_sens95_untreated=0.3769 minutes=8.8458
+[pilot_nih_adv s0] ep12 cls=0.0260 adv=0.6347 val_auroc=0.8970 val_sens95=0.6925 val_sens95_untreated=0.4923 minutes=9.5990
+[pilot_nih_adv s0] ep13 cls=0.0292 adv=0.6886 val_auroc=0.9019 val_sens95=0.6856 val_sens95_untreated=0.4462 minutes=10.3408
+[pilot_nih_adv s0] ep14 cls=0.0151 adv=0.6714 val_auroc=0.9045 val_sens95=0.6629 val_sens95_untreated=0.4231 minutes=11.0695
