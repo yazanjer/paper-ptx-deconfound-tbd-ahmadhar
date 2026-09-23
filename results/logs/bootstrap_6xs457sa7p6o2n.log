@@ -66,3 +66,17 @@ device ep6 loss 0.0157 val AUC 0.9817
 device ep7 loss 0.0218 val AUC 0.9820
 {'val_auc': 0.981984899222847, 'threshold': 0.39841356873512307, 'val_balanced_acc': 0.9566379183252248, 'val_sens': 0.9558823529411765, 'val_spec': 0.9573934837092731, 'n_train': 2626, 'n_val': 875}
 siim: device rate 0.623 (PTX+ 0.869, PTX- 0.553)
+2263 near-duplicate pairs (hamming <= 4)
+siim {('test_internal', 0): 1658, ('test_internal', 1): 476, ('train', 0): 5809, ('train', 1): 1665, ('val', 0): 829, ('val', 1): 238}
+nih {'excluded_dup': 1747, 'pilot_train': 1603, 'test': 521, 'pilot_val': 517}
+ptx498 {'test': 482, 'excluded_dup': 16}
+wrote results/mask_checks/siim_overlays.jpg
+wrote results/mask_checks/ptx498_overlays.jpg
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== [planb_prep] [ -f splits/siim.csv ] || (python -m ptx.data.device_labels --data /workspace/data --splits splits --target siim && python -m ptx.data.splits --data /workspace/data --dev siim --externals nih ptx498 --out splits)
+== [planb_prep] python scripts/check_masks.py --data /workspace/data --out results/mask_checks
+== [planb_gate1] pilot_pb_base seed 0
+/usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+[pilot_pb_base s0] ep0 cls=0.4750 seg=1.3884 val_auroc=0.9231 val_sens95=0.5882 val_sens95_untreated=0.1875 val_dice_pos=0.3894 minutes=2.3299
+[pilot_pb_base s0] ep1 cls=0.3235 seg=0.6346 val_auroc=0.9330 val_sens95=0.6933 val_sens95_untreated=0.3750 val_dice_pos=0.5083 minutes=4.6579
