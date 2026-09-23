@@ -1,0 +1,4 @@
+base: ../base_planb.yaml
+name: pb_bl_groupdro
+audit: true
+train: {group_dro: true}

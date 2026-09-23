@@ -1,0 +1,4 @@
+base: ../base_planb.yaml
+name: pb_bl_bandaru_auxcls
+audit: true
+model: {aux_tube_cls: true, mask_pool: false}

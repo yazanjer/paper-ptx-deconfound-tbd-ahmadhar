@@ -1,0 +1,4 @@
+base: ../base_planb.yaml
+name: pb_full
+audit: true
+model: {adv_device: true, mask_pool: true}

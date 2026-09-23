@@ -1,0 +1,5 @@
+base: ../base_planb.yaml
+name: pilot_pb_full
+audit: true
+model: {adv_device: true, mask_pool: true}
+eval: {sets: []}

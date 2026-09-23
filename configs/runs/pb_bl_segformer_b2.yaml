@@ -1,0 +1,4 @@
+base: ../base_planb.yaml
+name: pb_bl_segformer_b2
+audit: true
+model: {arch: segformer, encoder: mit_b2, mask_pool: true}

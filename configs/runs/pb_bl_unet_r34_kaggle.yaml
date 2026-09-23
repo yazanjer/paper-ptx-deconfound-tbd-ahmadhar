@@ -1,0 +1,4 @@
+base: ../base_planb.yaml
+name: pb_bl_unet_r34_kaggle
+audit: true
+model: {encoder: resnet34, mask_pool: true}

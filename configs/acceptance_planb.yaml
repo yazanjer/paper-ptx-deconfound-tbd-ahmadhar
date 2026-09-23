@@ -1,0 +1,23 @@
+# Plan B acceptance spec (see PREREGISTRATION.md, Amendment 1). Frozen with the pre-registration.
+dev: siim
+proposed: pb_full
+baselines: [pb_bl_unet_r34_kaggle, pb_no_c2, pb_bl_segformer_b2, pb_bl_groupdro, pb_bl_bandaru_auxcls,
+            pb_bl_raddino_probe, pb_bl_raddino_ft, bl_nnunet]
+segmentation_baselines: [pb_bl_unet_r34_kaggle, pb_no_c2, pb_bl_segformer_b2, bl_nnunet]
+min_primary_sets: 1
+primary_externals:
+  - {dataset: nih, split: test}
+secondary_sets:
+  - {dataset: siim,   split: test_internal}
+  - {dataset: ptx498, split: test}
+dice_sets:
+  - {dataset: siim,   split: test_internal}
+  - {dataset: ptx498, split: test}
+sanity_checks: [device_probe, leakage]
+ablation_reference: pb_full
+base_ablation: pb_base
+min_ablation_sets: 1
+ablations:
+  - {run: pb_no_c2, removed: C2 device-adversarial loss}
+  - {run: pb_no_c4, removed: C4 mask pooling}
+  - {run: pb_base,  removed: C2 and C4}

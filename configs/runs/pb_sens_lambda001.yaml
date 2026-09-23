@@ -1,0 +1,3 @@
+base: ../base_planb.yaml
+name: pb_sens_lambda001
+model: {adv_device: true, adv_lambda: 0.01}

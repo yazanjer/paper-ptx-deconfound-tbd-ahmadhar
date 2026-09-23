@@ -1,0 +1,10 @@
+# Plan B (no CANDID-PTX): develop on SIIM-ACR with pseudo 'visible device' labels,
+# test externally on the NIH device cohort (real device labels) and PTX-498.
+base: base.yaml
+data:
+  dev: siim
+eval:
+  sets:
+    - {dataset: siim,   split: test_internal, external: false}
+    - {dataset: nih,    split: test,          external: true}
+    - {dataset: ptx498, split: test,          external: true}
