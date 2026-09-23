@@ -1,0 +1,4 @@
+base: ../base.yaml
+name: bl_rueckel_tubeseg
+audit: true
+model: {aux_tube_seg: true}
