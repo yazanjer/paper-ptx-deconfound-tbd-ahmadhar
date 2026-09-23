@@ -37,6 +37,9 @@ if [ ! -d $REPO/.git ]; then
   git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/yazanjer/ptx-deconfound.git" $REPO
 fi
 cd $REPO && git pull -q --rebase origin main
+# heartbeat: publish the running log to GitHub every 10 minutes
+( while true; do sleep 600; mkdir -p results/logs; cp $WS/bootstrap.log results/logs/bootstrap_${RUNPOD_POD_ID:-local}.log
+  bash scripts/push_results.sh "heartbeat ${RUNPOD_POD_ID:-local}" >/dev/null 2>&1; done ) &
 pip install -q -r requirements.txt
 
 # ---- data (each dataset is prepared once and cached on the network volume)
