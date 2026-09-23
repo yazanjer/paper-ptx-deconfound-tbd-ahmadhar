@@ -1,0 +1,14 @@
+{
+  "val_auc": 0.981984899222847,
+  "threshold": 0.39841356873512307,
+  "val_balanced_acc": 0.9566379183252248,
+  "val_sens": 0.9558823529411765,
+  "val_spec": 0.9573934837092731,
+  "n_train": 2626,
+  "n_val": 875,
+  "target": "siim",
+  "target_n": 10675,
+  "target_device_rate": 0.6234192037470726,
+  "target_device_rate_ptx_pos": 0.8692728036990333,
+  "target_device_rate_ptx_neg": 0.5529170684667309
+}
