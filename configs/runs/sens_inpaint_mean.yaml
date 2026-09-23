@@ -1,0 +1,4 @@
+base: ../base.yaml
+name: sens_inpaint_mean
+model: {aux_tube_seg: true, adv_device: true}
+train: {inpaint_p: 0.5, inpaint_method: mean}
