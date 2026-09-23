@@ -22,6 +22,10 @@ echo "=== bootstrap $(date -u) stages=[$STAGES] budget=${MAX_HOURS}h"
 
 finish() {
   echo "=== finished $(date -u)"
+  if [ -d $REPO/.git ]; then  # publish the log so progress/failures are visible from GitHub
+    mkdir -p $REPO/results/logs && cp $WS/bootstrap.log $REPO/results/logs/bootstrap_${RUNPOD_POD_ID:-local}.log
+    (cd $REPO && bash scripts/push_results.sh "bootstrap log ${RUNPOD_POD_ID:-local}") || true
+  fi
   if [ "${STOP_WHEN_DONE:-1}" = "1" ] && [ -n "${RUNPOD_POD_ID:-}" ]; then
     runpodctl stop pod "$RUNPOD_POD_ID" || true
   fi
