@@ -39,6 +39,11 @@ if [ ! -d $REPO/.git ]; then
   git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/yazanjer/ptx-deconfound.git" $REPO
 fi
 cd $REPO && { git rebase --abort 2>/dev/null; rm -rf .git/rebase-merge .git/rebase-apply; git fetch -q origin main && git reset -q --hard origin/main; }
+# fail fast if the token cannot push (otherwise hours of results would be lost)
+mkdir -p results/logs && date -u > results/logs/start_${RUNPOD_POD_ID:-local}.txt
+git add results/logs && git -c user.name=ptx-runner -c user.email=ptx-runner@users.noreply.github.com commit -q -m "pod start ${RUNPOD_POD_ID:-local}"
+if ! git push -q origin HEAD:main; then echo "FATAL: GitHub push failed - check github_token has Contents read/write"; exit 1; fi
+echo "github push OK"
 # heartbeat: publish the running log to GitHub every 10 minutes
 ( while true; do sleep 600; mkdir -p results/logs; cp $WS/bootstrap.log results/logs/bootstrap_${RUNPOD_POD_ID:-local}.log
   bash scripts/push_results.sh "heartbeat ${RUNPOD_POD_ID:-local}" >/dev/null 2>&1; done ) &
