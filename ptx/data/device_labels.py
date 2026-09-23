@@ -23,6 +23,34 @@ from torch.utils.data import DataLoader
 from ptx.data.dataset import CXRDataset, load_table
 
 
+def _apply(man, lab):
+    lab = lab.set_index("image_id")
+    for c in ("tube", "device", "treated"):
+        man[c] = man[c].fillna(-1).astype(int)
+    man["device_prob"] = man.image_id.map(lab.device_prob)
+    man["device"] = man.image_id.map(lab.device).fillna(-1).astype(int)
+    man["treated"] = man["device"]
+    man["treated_source"] = "pseudo_device_cls"
+    return man
+
+
+def sync(a) -> bool:
+    """Keep device labels identical across pods: the committed label file is the source of truth."""
+    lab_p = a.out / f"{a.target}_device_labels.csv"
+    man_p = a.data / a.target / "manifest.csv"
+    man = pd.read_csv(man_p, dtype={"image_id": str})
+    if lab_p.exists():
+        _apply(man, pd.read_csv(lab_p, dtype={"image_id": str})).to_csv(man_p, index=False)
+        print(f"applied {lab_p} to {man_p}")
+        return True
+    if "device_prob" in man and man.device_prob.notna().all():
+        a.out.mkdir(parents=True, exist_ok=True)
+        man[["image_id", "device_prob", "device"]].to_csv(lab_p, index=False)
+        print(f"exported existing labels to {lab_p}")
+        return True
+    return False
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", type=Path, required=True)
@@ -35,7 +63,12 @@ def main():
     ap.add_argument("--pretrained", type=int, default=1)
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--out", type=Path, default=Path("results/device_labels"))
+    ap.add_argument("--sync", action="store_true",
+                    help="reuse labels: apply results/device_labels/<target>_device_labels.csv if present, "
+                         "else export labels already in the manifest, else train")
     a = ap.parse_args()
+    if a.sync and sync(a):
+        return
     import timm
     torch.manual_seed(0)
     np.random.seed(0)
@@ -106,6 +139,7 @@ def main():
                   "target_device_rate_ptx_neg": float(man.loc[man.ptx == 0, "device"].mean())})
     a.out.mkdir(parents=True, exist_ok=True)
     json.dump(stats, open(a.out / "device_classifier.json", "w"), indent=2)
+    man[["image_id", "device_prob", "device"]].to_csv(a.out / f"{a.target}_device_labels.csv", index=False)
     man[man.ptx == 1][["image_id", "device", "device_prob"]].assign(reviewer_device="", reviewer="").to_csv(
         a.out / f"{a.target}_positives_review.csv", index=False)
     torch.save(model.state_dict(), a.out / f"device_{a.backbone}.pt")
