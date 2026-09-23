@@ -1,0 +1,7 @@
+base: ../base.yaml
+name: pilot_nih_dro
+data: {dev: nih, train_split: pilot_train, val_split: pilot_val}
+model: {mask_pool: false}
+train: {group_dro: true}
+loss: {w_seg: 0.0}
+eval: {sets: []}
