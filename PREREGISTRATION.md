@@ -1,6 +1,6 @@
 # Pre-registration: Seeing the air, not the tube
 
-Status: DRAFT v0.2 (2026-09-23). Freeze with `scripts/freeze_prereg.sh` before the first external evaluation.
+Status: DRAFT v0.3 (2026-09-23, Amendment 1 added). Freeze with `scripts/freeze_prereg.sh` before the first external evaluation.
 Any change after freezing is logged under *Deviations* with date and reason; the external-evaluation
 script refuses to run if this file's hash differs from `results/prereg_hash.txt`.
 
@@ -84,6 +84,28 @@ No seed is dropped after its result is seen. External sets are evaluated once pe
 - **Gate 1 (week 3):** on development validation only, some deconfounding variant must gain >= 2 pp
   untreated sensitivity at 95% specificity over the baseline; otherwise switch to the shortcut-audit paper.
 - **Gate 2 (week 6):** freeze models, open externals once, run `ptx.eval.acceptance`.
+
+## Amendment 1 — Plan B without CANDID-PTX (2026-09-23, before any external evaluation)
+
+Access to CANDID-PTX is pending (ethics course + data-use agreement). To proceed, a second protocol
+runs in parallel and is reported as such. If CANDID-PTX arrives before Gate 2, the original protocol
+(sections 1-9) is the primary analysis and Plan B becomes a sensitivity analysis.
+
+- **Development set:** SIIM-ACR, 70/10/20 split (`ptx.data.splits --dev siim`, seed 2026).
+  SIIM-ACR has one identifier per image, so splits are image-level plus near-duplicate grouping.
+- **"Treated" label:** any visible device, predicted by an image classifier trained only on the NIH
+  cohort's released `train` split and thresholded on its `validation` split (`ptx.data.device_labels`).
+  Every SIIM positive is listed for manual review. The NIH `test` split is never used for this.
+- **External sets:** NIH cohort `test` (real device labels) is the single primary external set;
+  PTX-498 is secondary (sensitivity, Dice, size). SIIM-ACR images derive from NIH ChestX-ray14, so
+  near-duplicates of SIIM images are removed from the NIH test split (reported count).
+- **Method:** C2 (device-adversarial) + C4 (mask pooling). C1 and C3 need tube masks and are dropped.
+- **Criteria changes:** A1 and A2 must pass on the one primary external set (min_primary_sets = 1);
+  A7 and A8 on the NIH test set; A5 and A6 on SIIM test_internal and PTX-498. Sanity checks: device probe
+  and leakage (the tube-only occlusion test needs tube masks and is dropped). Ablations: -C2, -C4,
+  Base; the ablation rule applies to the single primary external set.
+- **Limitation stated in advance:** "device" is not "chest tube"; results speak to device shortcuts in
+  general, and patient-level overlap between SIIM and NIH cannot be fully excluded (only image-level).
 
 ## Deviations
 
