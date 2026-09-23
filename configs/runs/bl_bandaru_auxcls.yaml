@@ -1,0 +1,4 @@
+base: ../base.yaml
+name: bl_bandaru_auxcls
+audit: true
+model: {aux_tube_cls: true, mask_pool: false}
