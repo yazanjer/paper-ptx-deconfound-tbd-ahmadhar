@@ -193,3 +193,7 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 [pb_full s0] ep9 cls=0.0799 seg=0.4074 adv=0.6076 val_auroc=0.9419 val_sens95=0.7353 val_sens95_untreated=0.7500 val_dice_pos=0.4842 minutes=22.6641
 [pb_full s0] ep10 cls=0.0691 seg=0.3980 adv=0.6052 val_auroc=0.9448 val_sens95=0.7605 val_sens95_untreated=0.6875 val_dice_pos=0.5079 minutes=24.9267
 [pb_full s0] ep11 cls=0.0443 seg=0.3777 adv=0.6116 val_auroc=0.9390 val_sens95=0.7437 val_sens95_untreated=0.7500 val_dice_pos=0.4852 minutes=27.1797
+[pb_full s0] ep12 cls=0.0414 seg=0.3753 adv=0.6027 val_auroc=0.9408 val_sens95=0.7731 val_sens95_untreated=0.7500 val_dice_pos=0.5032 minutes=29.4393
+[pb_full s0] ep13 cls=0.0293 seg=0.3611 adv=0.6107 val_auroc=0.9445 val_sens95=0.7857 val_sens95_untreated=0.7812 val_dice_pos=0.4883 minutes=31.7014
+[pb_full s0] ep14 cls=0.0265 seg=0.3510 adv=0.6066 val_auroc=0.9359 val_sens95=0.7815 val_sens95_untreated=0.7812 val_dice_pos=0.4876 minutes=33.9653
+[pb_full s0] ep15 cls=0.0197 seg=0.3489 adv=0.6069 val_auroc=0.9423 val_sens95=0.7899 val_sens95_untreated=0.7812 val_dice_pos=0.4831 minutes=36.2222
