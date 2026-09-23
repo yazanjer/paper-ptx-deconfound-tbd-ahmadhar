@@ -40,21 +40,21 @@ if [[ " $STAGES " == *" data "* ]]; then
   mkdir -p ~/.kaggle && printf '{"username":"%s","key":"%s"}' "$KAGGLE_USERNAME" "$KAGGLE_KEY" > ~/.kaggle/kaggle.json && chmod 600 ~/.kaggle/kaggle.json
   if [ ! -f $DATA/ptx498/manifest.csv ]; then
     curl -sL -o $RAW/ptx498.zip "https://zenodo.org/api/records/8266529/files/PTX-498-v2-fix.zip/content"
-    unzip -q -o $RAW/ptx498.zip -d $RAW/ptx498 && python -m ptx.data.prepare ptx498 --raw $RAW/ptx498 --out $DATA
+    unzip -q -o $RAW/ptx498.zip -d $RAW/ptx498 && python -m ptx.data.prepare ptx498 --raw $RAW/ptx498 --out $DATA && rm -rf $RAW/ptx498 $RAW/ptx498.zip
   fi
   if [ ! -f $DATA/nih/manifest.csv ]; then
     curl -sL -o $RAW/nih_cohort.zip "https://zenodo.org/api/records/22839698/files/Pneumothorax_Zenodo_READY_v1.0.0.zip/content"
     unzip -q -o $RAW/nih_cohort.zip -d $RAW/nih_cohort
     kaggle datasets download -d nih-chest-xrays/data -p $RAW/nih --unzip
-    python -m ptx.data.prepare nih --raw $RAW/nih --cohort $RAW/nih_cohort --out $DATA
+    python -m ptx.data.prepare nih --raw $RAW/nih --cohort $RAW/nih_cohort --out $DATA && rm -rf $RAW/nih  # keep only the 4,388 cohort images
   fi
   if [ ! -f $DATA/siim/manifest.csv ]; then
     kaggle datasets download -d jesperdramsch/siim-acr-pneumothorax-segmentation-data -p $RAW/siim --unzip
-    python -m ptx.data.prepare siim --raw $RAW/siim --out $DATA
+    python -m ptx.data.prepare siim --raw $RAW/siim --out $DATA && rm -rf $RAW/siim
   fi
   if [ ! -f $DATA/candid/manifest.csv ] && [ -n "${CANDID_URL:-}" ]; then
     curl -sL -o $RAW/candid.zip "$CANDID_URL" && unzip -q -o $RAW/candid.zip -d $RAW/candid
-    python -m ptx.data.prepare candid --raw $RAW/candid --out $DATA
+    python -m ptx.data.prepare candid --raw $RAW/candid  --out $DATA  # raw kept: re-run with --rle-mode absolute if overlays look wrong
   fi
   python scripts/data_report.py --data $DATA --out results/data_report.md
   # splits are created once (with CANDID as dev) and then frozen in git
