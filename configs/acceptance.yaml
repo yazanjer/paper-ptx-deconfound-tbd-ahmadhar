@@ -1,0 +1,23 @@
+# Frozen with PREREGISTRATION.md. Do not edit after the first external evaluation.
+dev: candid
+proposed: full
+baselines: [bl_unet_r34_kaggle, bl_unet_effb4, bl_segformer_b2, bl_groupdro, bl_bandaru_auxcls,
+            bl_rueckel_tubeseg, bl_raddino_probe, bl_raddino_ft, bl_nnunet]
+segmentation_baselines: [bl_unet_r34_kaggle, bl_unet_effb4, bl_segformer_b2, bl_nnunet]
+primary_externals:              # A1/A2 must pass on BOTH
+  - {dataset: siim, split: test}
+  - {dataset: nih,  split: test}
+secondary_sets:
+  - {dataset: candid, split: test_internal}
+  - {dataset: ptx498, split: test}
+dice_sets:
+  - {dataset: candid, split: test_internal}
+  - {dataset: ptx498, split: test}
+ablation_reference: full
+base_ablation: abl_base
+ablations:
+  - {run: abl_no_c1, removed: C1 tube inpainting}
+  - {run: abl_no_c2, removed: C2 device-adversarial loss}
+  - {run: abl_no_c3, removed: C3 auxiliary tube segmentation}
+  - {run: abl_no_c4, removed: C4 mask pooling}
+  - {run: abl_base,  removed: C1-C4}
