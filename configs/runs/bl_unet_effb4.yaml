@@ -1,0 +1,4 @@
+base: ../base.yaml
+name: bl_unet_effb4
+audit: true
+model: {encoder: efficientnet-b4, mask_pool: true}
