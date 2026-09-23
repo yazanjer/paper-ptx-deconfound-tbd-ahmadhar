@@ -35,3 +35,29 @@ stages:
     - {command: "python -m ptx.data.leakage --data {data} --splits splits --dev candid"}
     - {command: "python -m ptx.evaluate_external --runs results/runs"}
     - {command: "python -m ptx.eval.acceptance --spec configs/acceptance.yaml --runs results/runs --out results"}
+  # ---------------- Plan B (no CANDID-PTX): SIIM-ACR development set, NIH + PTX-498 external
+  planb_prep:
+    - {command: "[ -f splits/siim.csv ] || (python -m ptx.data.device_labels --data {data} --splits splits --target siim && python -m ptx.data.splits --data {data} --dev siim --externals nih ptx498 --out splits)"}
+    - {command: "python scripts/check_masks.py --data {data} --out results/mask_checks"}
+  planb_gate1:
+    - {config: pilot_pb_base,   seeds: [0]}
+    - {config: pilot_pb_no_c2,  seeds: [0]}
+    - {config: pilot_pb_full,   seeds: [0]}
+  planb_main:
+    - {config: pb_full,               seeds: seeds_full}
+    - {config: pb_no_c2,              seeds: seeds_full}
+    - {config: pb_no_c4,              seeds: seeds_full}
+    - {config: pb_base,               seeds: seeds_full}
+    - {config: pb_bl_unet_r34_kaggle, seeds: seeds_full}
+    - {config: pb_bl_bandaru_auxcls,  seeds: seeds_full}
+    - {config: pb_bl_groupdro,        seeds: seeds_full}
+    - {config: pb_bl_raddino_probe,   seeds: seeds_full}
+    - {config: pb_bl_raddino_ft,      seeds: seeds_full}
+    - {config: pb_bl_segformer_b2,    seeds: seeds_heavy}
+    - {config: pb_sens_lambda001,     seeds: seeds_heavy}
+    - {config: pb_sens_lambda1,       seeds: seeds_heavy}
+  planb_gate2:
+    - {command: "bash scripts/freeze_prereg.sh"}
+    - {command: "python -m ptx.data.leakage --data {data} --splits splits --dev siim"}
+    - {command: "python -m ptx.evaluate_external --runs results/runs"}
+    - {command: "python -m ptx.eval.acceptance --spec configs/acceptance_planb.yaml --runs results/runs --out results/planb"}
