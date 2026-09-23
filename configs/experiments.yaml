@@ -1,0 +1,37 @@
+# Run queue consumed by scripts/run_queue.py. Stages run in order; a stage only starts when asked.
+seeds_full: [0, 1, 2, 3, 4]
+seeds_heavy: [0, 1, 2]
+stages:
+  gate1_nih:        # can run before CANDID access (NIH released train/val only)
+    - {config: pilot_nih_base, seeds: [0]}
+    - {config: pilot_nih_adv,  seeds: [0]}
+    - {config: pilot_nih_dro,  seeds: [0]}
+  gate1:            # CANDID dev validation only
+    - {config: pilot_bl_unet_effb4, seeds: [0]}
+    - {config: pilot_abl_base,      seeds: [0]}
+    - {config: pilot_full,          seeds: [0]}
+  tube_labels:      # pseudo-label chest tubes on SIIM-ACR (trained on CANDID train only)
+    - {command: "python -m ptx.data.tube_labels --data {data} --splits splits --dev candid --target siim"}
+  main:
+    - {config: full,               seeds: seeds_full}
+    - {config: abl_no_c1,          seeds: seeds_full}
+    - {config: abl_no_c2,          seeds: seeds_full}
+    - {config: abl_no_c3,          seeds: seeds_full}
+    - {config: abl_no_c4,          seeds: seeds_full}
+    - {config: abl_base,           seeds: seeds_full}
+    - {config: bl_unet_r34_kaggle, seeds: seeds_full}
+    - {config: bl_unet_effb4,      seeds: seeds_full}
+    - {config: bl_bandaru_auxcls,  seeds: seeds_full}
+    - {config: bl_groupdro,        seeds: seeds_full}
+    - {config: bl_raddino_probe,   seeds: seeds_full}
+    - {config: bl_raddino_ft,      seeds: seeds_full}
+    - {config: bl_segformer_b2,    seeds: seeds_heavy}
+    - {config: bl_rueckel_tubeseg, seeds: seeds_heavy}
+    - {config: sens_lambda001,     seeds: seeds_heavy}
+    - {config: sens_lambda1,       seeds: seeds_heavy}
+    - {config: sens_inpaint_mean,  seeds: seeds_heavy}
+  gate2:            # opens external sets once, then scores everything
+    - {command: "bash scripts/freeze_prereg.sh"}
+    - {command: "python -m ptx.data.leakage --data {data} --splits splits --dev candid"}
+    - {command: "python -m ptx.evaluate_external --runs results/runs"}
+    - {command: "python -m ptx.eval.acceptance --spec configs/acceptance.yaml --runs results/runs --out results"}
