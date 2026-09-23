@@ -63,7 +63,7 @@ PY
 )
     echo "NIH cohort images missing from raw folder: $have"
     if [ "$have" != "0" ]; then
-      rm -rf $RAW/nih && kaggle datasets download -d nih-chest-xrays/data -p $RAW/nih --unzip
+      kaggle datasets download -d nih-chest-xrays/data -p $RAW/nih --unzip
     fi
     python -m ptx.data.prepare nih --raw $RAW/nih --cohort $RAW/nih_cohort --out $DATA && rm -rf $RAW/nih  # keep only the 4,388 cohort images
   fi
