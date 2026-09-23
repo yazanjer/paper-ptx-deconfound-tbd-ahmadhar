@@ -1,0 +1,41 @@
+# Shared defaults. Every run config sets `base: ../base.yaml` and overrides what differs.
+data:
+  root: /workspace/data          # output of ptx.data.prepare
+  splits: splits                 # frozen split files committed to git
+  dev: candid                    # development dataset (train/val/test_internal)
+  train_split: train
+  val_split: val
+  size: 512
+model:
+  type: ptxnet
+  arch: unet
+  encoder: efficientnet-b4
+  pretrained: imagenet
+  mask_pool: true                # C4
+  aux_tube_seg: false            # C3
+  adv_device: false              # C2
+  adv_lambda: 0.1
+  aux_tube_cls: false
+train:
+  epochs: 20
+  batch_size: 16
+  lr: 0.0003
+  weight_decay: 0.0001
+  workers: 8
+  balance_pos: 0.5
+  inpaint_p: 0.0                 # C1
+  inpaint_method: telea
+  group_dro: false
+  select_metric: sens95_untreated
+loss:
+  w_seg: 1.0
+  w_tube_seg: 0.5
+  w_adv: 1.0
+  w_aux_cls: 0.5
+audit: false
+eval:
+  sets:
+    - {dataset: candid, split: test_internal, external: false}
+    - {dataset: siim,   split: test,          external: true}
+    - {dataset: nih,    split: test,          external: true}
+    - {dataset: ptx498, split: test,          external: true}
