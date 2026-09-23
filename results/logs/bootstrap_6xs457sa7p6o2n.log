@@ -129,3 +129,8 @@ Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF
 /usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
   warnings.warn(
 [pilot_pb_full s0] ep0 cls=0.9881 seg=1.5064 adv=1.0816 val_auroc=0.8412 val_sens95=0.5336 val_sens95_untreated=0.0938 val_dice_pos=0.2036 minutes=2.2773
+[pilot_pb_full s0] ep1 cls=0.4061 seg=0.8488 adv=0.6766 val_auroc=0.9407 val_sens95=0.6765 val_sens95_untreated=0.4375 val_dice_pos=0.3482 minutes=4.5549
+[pilot_pb_full s0] ep2 cls=0.3008 seg=0.6250 adv=0.6283 val_auroc=0.9505 val_sens95=0.7395 val_sens95_untreated=0.5000 val_dice_pos=0.4505 minutes=6.8373
+[pilot_pb_full s0] ep3 cls=0.2564 seg=0.5514 adv=0.6404 val_auroc=0.9456 val_sens95=0.7815 val_sens95_untreated=0.9062 val_dice_pos=0.4736 minutes=9.1463
+[pilot_pb_full s0] ep4 cls=0.2130 seg=0.5145 adv=0.6362 val_auroc=0.9505 val_sens95=0.7437 val_sens95_untreated=0.6250 val_dice_pos=0.5004 minutes=11.4563
+[pilot_pb_full s0] ep5 cls=0.1816 seg=0.4866 adv=0.6217 val_auroc=0.9537 val_sens95=0.7815 val_sens95_untreated=0.8125 val_dice_pos=0.5147 minutes=13.7287
