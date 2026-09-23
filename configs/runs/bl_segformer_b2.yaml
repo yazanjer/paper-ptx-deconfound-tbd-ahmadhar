@@ -1,0 +1,4 @@
+base: ../base.yaml
+name: bl_segformer_b2
+audit: true
+model: {arch: segformer, encoder: mit_b2, mask_pool: true}
