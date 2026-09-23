@@ -1,0 +1,4 @@
+base: ../base.yaml
+name: sens_lambda001
+model: {aux_tube_seg: true, adv_device: true, adv_lambda: 0.01}
+train: {inpaint_p: 0.5}
