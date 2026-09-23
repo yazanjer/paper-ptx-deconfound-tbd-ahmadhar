@@ -1,0 +1,6 @@
+base: ../base.yaml
+name: bl_raddino_probe
+audit: true
+model: {type: probe, backbone: rad-dino, finetune: false}
+train: {lr: 0.001, batch_size: 32}
+loss: {w_seg: 0.0}
