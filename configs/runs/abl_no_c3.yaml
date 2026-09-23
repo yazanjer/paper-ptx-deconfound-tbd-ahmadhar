@@ -1,0 +1,5 @@
+base: ../base.yaml
+name: abl_no_c3
+audit: true
+model: {aux_tube_seg: false, adv_device: true, mask_pool: true}
+train: {inpaint_p: 0.5}
