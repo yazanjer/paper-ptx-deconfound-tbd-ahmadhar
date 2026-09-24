@@ -302,3 +302,15 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_full s4] ep12 cls=0.0322 seg=0.3584 adv=0.6170 val_auroc=0.9410 val_sens95=0.7101 val_sens95_untreated=0.7500 val_dice_pos=0.4660 minutes=29.3191
 [pb_full s4] ep13 cls=0.0261 seg=0.3472 adv=0.6093 val_auroc=0.9417 val_sens95=0.7437 val_sens95_untreated=0.8125 val_dice_pos=0.4634 minutes=31.5612
 [pb_full s4] ep14 cls=0.0266 seg=0.3372 adv=0.6073 val_auroc=0.9488 val_sens95=0.7521 val_sens95_untreated=0.8125 val_dice_pos=0.4817 minutes=33.8096
+[pb_full s4] ep15 cls=0.0193 seg=0.3320 adv=0.6149 val_auroc=0.9438 val_sens95=0.7479 val_sens95_untreated=0.7500 val_dice_pos=0.4815 minutes=36.0566
+[pb_full s4] ep16 cls=0.0166 seg=0.3249 adv=0.5909 val_auroc=0.9452 val_sens95=0.7311 val_sens95_untreated=0.7500 val_dice_pos=0.4710 minutes=38.2958
+[pb_full s4] ep17 cls=0.0123 seg=0.3200 adv=0.6087 val_auroc=0.9454 val_sens95=0.7479 val_sens95_untreated=0.7812 val_dice_pos=0.4655 minutes=40.5434
+[pb_full s4] ep18 cls=0.0135 seg=0.3233 adv=0.6224 val_auroc=0.9466 val_sens95=0.7395 val_sens95_untreated=0.7812 val_dice_pos=0.4650 minutes=42.7942
+/workspace/ptx-deconfound/ptx/train.py:221: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(od / "best.pt", map_location=device))
+[pb_full s4] ep19 cls=0.0121 seg=0.3195 adv=0.6188 val_auroc=0.9469 val_sens95=0.7521 val_sens95_untreated=0.7812 val_dice_pos=0.4666 minutes=45.0383
+external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+== [planb_main_a] pb_no_c2 seed 0
+/usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
