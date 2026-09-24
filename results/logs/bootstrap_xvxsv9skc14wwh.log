@@ -293,3 +293,11 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_bl_unet_r34_kaggle s1] ep4 cls=0.3986 seg=0.6917 val_auroc=0.9089 val_sens95=0.5210 val_sens95_untreated=0.4375 val_dice_pos=0.4258 minutes=6.7402
 [pb_bl_unet_r34_kaggle s1] ep5 cls=0.3733 seg=0.6417 val_auroc=0.9244 val_sens95=0.5756 val_sens95_untreated=0.4062 val_dice_pos=0.3722 minutes=8.0730
 [pb_bl_unet_r34_kaggle s1] ep6 cls=0.3546 seg=0.6317 val_auroc=0.9299 val_sens95=0.6176 val_sens95_untreated=0.4688 val_dice_pos=0.4090 minutes=9.3937
+[pb_bl_unet_r34_kaggle s1] ep7 cls=0.3209 seg=0.5923 val_auroc=0.9281 val_sens95=0.5924 val_sens95_untreated=0.2812 val_dice_pos=0.4421 minutes=10.7280
+[pb_bl_unet_r34_kaggle s1] ep8 cls=0.3080 seg=0.5712 val_auroc=0.8933 val_sens95=0.5462 val_sens95_untreated=0.5625 val_dice_pos=0.3864 minutes=12.0531
+[pb_bl_unet_r34_kaggle s1] ep9 cls=0.2894 seg=0.5612 val_auroc=0.9444 val_sens95=0.6891 val_sens95_untreated=0.5625 val_dice_pos=0.4736 minutes=13.3812
+[pb_bl_unet_r34_kaggle s1] ep10 cls=0.2613 seg=0.5344 val_auroc=0.9239 val_sens95=0.6807 val_sens95_untreated=0.6875 val_dice_pos=0.4724 minutes=14.6996
+[pb_bl_unet_r34_kaggle s1] ep11 cls=0.2521 seg=0.5313 val_auroc=0.9308 val_sens95=0.6513 val_sens95_untreated=0.7188 val_dice_pos=0.4677 minutes=16.0285
+[pb_bl_unet_r34_kaggle s1] ep12 cls=0.2264 seg=0.5087 val_auroc=0.9441 val_sens95=0.6975 val_sens95_untreated=0.5625 val_dice_pos=0.4485 minutes=17.3559
+[pb_bl_unet_r34_kaggle s1] ep13 cls=0.1913 seg=0.4960 val_auroc=0.9424 val_sens95=0.6849 val_sens95_untreated=0.6562 val_dice_pos=0.4658 minutes=18.6721
+[pb_bl_unet_r34_kaggle s1] ep14 cls=0.1860 seg=0.4808 val_auroc=0.9449 val_sens95=0.7185 val_sens95_untreated=0.6562 val_dice_pos=0.5071 minutes=19.9850
