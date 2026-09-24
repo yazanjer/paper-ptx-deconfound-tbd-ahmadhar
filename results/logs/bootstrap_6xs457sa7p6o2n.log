@@ -740,3 +740,7 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 == [planb_main_a] pb_sens_lambda001 seed 1
 /usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
   warnings.warn(
+[pb_sens_lambda001 s1] ep0 cls=0.7664 seg=1.3808 adv=0.6431 val_auroc=0.8752 val_sens95=0.4034 val_sens95_untreated=0.2500 val_dice_pos=0.0508 minutes=2.2858
+[pb_sens_lambda001 s1] ep1 cls=0.4109 seg=0.8735 adv=0.4754 val_auroc=0.9140 val_sens95=0.5210 val_sens95_untreated=0.3125 val_dice_pos=0.3335 minutes=4.5823
+[pb_sens_lambda001 s1] ep2 cls=0.3284 seg=0.6438 adv=0.5214 val_auroc=0.9390 val_sens95=0.6555 val_sens95_untreated=0.6875 val_dice_pos=0.4220 minutes=6.8748
+[pb_sens_lambda001 s1] ep3 cls=0.2638 seg=0.5568 adv=0.5044 val_auroc=0.9464 val_sens95=0.7521 val_sens95_untreated=0.6562 val_dice_pos=0.4971 minutes=9.1752
