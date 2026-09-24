@@ -181,3 +181,7 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 == [planb_main_b2] pb_bl_raddino_ft seed 0
+[pb_bl_raddino_ft s0] ep0 cls=0.4812 val_auroc=0.9323 val_sens95=0.6765 val_sens95_untreated=0.4688 minutes=2.5375
+[pb_bl_raddino_ft s0] ep1 cls=0.2949 val_auroc=0.9486 val_sens95=0.7983 val_sens95_untreated=0.6562 minutes=5.0611
+[pb_bl_raddino_ft s0] ep2 cls=0.2274 val_auroc=0.9489 val_sens95=0.7185 val_sens95_untreated=0.6250 minutes=7.5783
+[pb_bl_raddino_ft s0] ep3 cls=0.1764 val_auroc=0.9540 val_sens95=0.7857 val_sens95_untreated=0.8750 minutes=10.0794
