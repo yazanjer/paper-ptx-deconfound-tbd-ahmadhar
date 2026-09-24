@@ -62,3 +62,8 @@ wrote results/mask_checks/ptx498_overlays.jpg
 [pb_bl_segformer_b2 s0] ep1 cls=0.4729 seg=0.7910 val_auroc=0.9237 val_sens95=0.6429 val_sens95_untreated=0.4062 val_dice_pos=0.4102 minutes=4.2015
 [pb_bl_segformer_b2 s0] ep2 cls=0.3725 seg=0.6466 val_auroc=0.9454 val_sens95=0.7059 val_sens95_untreated=0.5312 val_dice_pos=0.4564 minutes=6.2944
 [pb_bl_segformer_b2 s0] ep3 cls=0.3434 seg=0.6001 val_auroc=0.9421 val_sens95=0.6849 val_sens95_untreated=0.5000 val_dice_pos=0.4926 minutes=8.3753
+[pb_bl_segformer_b2 s0] ep4 cls=0.3085 seg=0.5680 val_auroc=0.9447 val_sens95=0.6513 val_sens95_untreated=0.5000 val_dice_pos=0.5059 minutes=10.4432
+[pb_bl_segformer_b2 s0] ep5 cls=0.2813 seg=0.5426 val_auroc=0.9466 val_sens95=0.6933 val_sens95_untreated=0.5312 val_dice_pos=0.4636 minutes=12.5083
+[pb_bl_segformer_b2 s0] ep6 cls=0.2521 seg=0.5137 val_auroc=0.9455 val_sens95=0.7227 val_sens95_untreated=0.7500 val_dice_pos=0.5237 minutes=14.5946
+[pb_bl_segformer_b2 s0] ep7 cls=0.2197 seg=0.4936 val_auroc=0.9482 val_sens95=0.7143 val_sens95_untreated=0.6250 val_dice_pos=0.4979 minutes=16.6998
+[pb_bl_segformer_b2 s0] ep8 cls=0.2283 seg=0.4827 val_auroc=0.9579 val_sens95=0.7731 val_sens95_untreated=0.7812 val_dice_pos=0.5316 minutes=18.8011
