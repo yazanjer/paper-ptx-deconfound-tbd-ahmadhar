@@ -570,3 +570,13 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_bl_groupdro s1] ep13 cls=0.0499 seg=0.3877 val_auroc=0.9190 val_sens95=0.7227 val_sens95_untreated=0.7500 val_dice_pos=0.5076 minutes=31.8413
 [pb_bl_groupdro s1] ep14 cls=0.0352 seg=0.3822 val_auroc=0.9162 val_sens95=0.7059 val_sens95_untreated=0.7188 val_dice_pos=0.4673 minutes=34.1050
 [pb_bl_groupdro s1] ep15 cls=0.0338 seg=0.3743 val_auroc=0.9147 val_sens95=0.7017 val_sens95_untreated=0.7188 val_dice_pos=0.4761 minutes=36.3574
+[pb_bl_groupdro s1] ep16 cls=0.0376 seg=0.3756 val_auroc=0.9049 val_sens95=0.7269 val_sens95_untreated=0.7188 val_dice_pos=0.4691 minutes=38.6512
+[pb_bl_groupdro s1] ep17 cls=0.0231 seg=0.3605 val_auroc=0.9086 val_sens95=0.7521 val_sens95_untreated=0.7188 val_dice_pos=0.4704 minutes=40.9170
+[pb_bl_groupdro s1] ep18 cls=0.0215 seg=0.3640 val_auroc=0.9109 val_sens95=0.7227 val_sens95_untreated=0.7188 val_dice_pos=0.4714 minutes=43.1829
+/workspace/ptx-deconfound/ptx/train.py:221: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(od / "best.pt", map_location=device))
+[pb_bl_groupdro s1] ep19 cls=0.0218 seg=0.3648 val_auroc=0.9122 val_sens95=0.7479 val_sens95_untreated=0.7188 val_dice_pos=0.4768 minutes=45.4449
+external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+== [planb_main_b] pb_bl_groupdro seed 2
+[pb_bl_groupdro s2] ep0 cls=0.4797 seg=1.0466 val_auroc=0.9158 val_sens95=0.6008 val_sens95_untreated=0.5000 val_dice_pos=0.2885 minutes=2.2776
