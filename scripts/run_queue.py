@@ -9,6 +9,7 @@ import argparse
 import subprocess
 import sys
 import time
+import traceback
 from pathlib import Path
 
 import yaml
@@ -33,6 +34,7 @@ def main():
     a = ap.parse_args()
     E = yaml.safe_load(open("configs/experiments.yaml"))
     t0 = time.time()
+    failed = []
     for stage in a.stage:
         for item in E["stages"][stage]:
             left = a.hours - (time.time() - t0) / 3600
@@ -57,11 +59,16 @@ def main():
                         push(f"[{stage}] partial: budget reached")
                     return
                 print(f"== [{stage}] {cfg['name']} seed {s}")
-                run(cfg, s, a.out)
+                try:
+                    run(cfg, s, a.out)
+                except Exception:  # one broken config must not stop the rest of the queue
+                    traceback.print_exc()
+                    failed.append(f"{cfg['name']} seed {s}")
+                    print(f"!! [{stage}] {cfg['name']} seed {s} FAILED; continuing")
                 if a.push:
                     push(f"[{stage}] {cfg['name']} seed {s}")
                 left = a.hours - (time.time() - t0) / 3600
-    print("queue finished")
+    print("queue finished" + (f"; FAILED runs: {failed}" if failed else ""))
 
 
 if __name__ == "__main__":
