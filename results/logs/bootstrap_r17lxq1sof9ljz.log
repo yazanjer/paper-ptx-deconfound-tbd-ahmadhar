@@ -293,3 +293,7 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_bl_raddino_ft s4] ep9 cls=0.0275 val_auroc=0.9496 val_sens95=0.7689 val_sens95_untreated=0.6875 minutes=25.0522
 [pb_bl_raddino_ft s4] ep10 cls=0.0181 val_auroc=0.9442 val_sens95=0.7605 val_sens95_untreated=0.6562 minutes=27.5391
 [pb_bl_raddino_ft s4] ep11 cls=0.0145 val_auroc=0.9431 val_sens95=0.7563 val_sens95_untreated=0.6562 minutes=30.0281
+[pb_bl_raddino_ft s4] ep12 cls=0.0117 val_auroc=0.9421 val_sens95=0.7605 val_sens95_untreated=0.6250 minutes=32.5211
+[pb_bl_raddino_ft s4] ep13 cls=0.0080 val_auroc=0.9387 val_sens95=0.7395 val_sens95_untreated=0.7188 minutes=35.0082
+[pb_bl_raddino_ft s4] ep14 cls=0.0069 val_auroc=0.9399 val_sens95=0.7269 val_sens95_untreated=0.6562 minutes=37.5086
+[pb_bl_raddino_ft s4] ep15 cls=0.0051 val_auroc=0.9406 val_sens95=0.7353 val_sens95_untreated=0.6250 minutes=39.9889
