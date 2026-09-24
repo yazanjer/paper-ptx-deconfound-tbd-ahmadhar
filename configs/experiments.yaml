@@ -67,6 +67,6 @@ stages:
     - {command: "bash scripts/freeze_prereg.sh"}
     - {command: "mkdir -p results/planb && python -m ptx.data.leakage --data {data} --splits splits --dev siim --out results/planb/leakage_check.json"}
     - {command: "python scripts/wait_runs.py --expect 54 --prefix pb_ --hours 5"}
-    - {command: "python scripts/fetch_weights.py --runs results/runs"}
+    - {command: "for i in $(seq 12); do python scripts/fetch_weights.py --runs results/runs && exit 0; sleep 300; done; exit 1"}  # last pod uploads weights after its final run
     - {command: "python -m ptx.evaluate_external --runs results/runs"}
     - {command: "python -m ptx.eval.acceptance --spec configs/acceptance_planb.yaml --runs results/runs --out results/planb"}
