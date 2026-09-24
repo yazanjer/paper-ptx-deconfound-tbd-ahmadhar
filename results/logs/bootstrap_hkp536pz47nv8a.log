@@ -76,3 +76,15 @@ wrote results/mask_checks/ptx498_overlays.jpg
 [pb_bl_segformer_b2 s0] ep15 cls=0.0728 seg=0.3903 val_auroc=0.9569 val_sens95=0.7773 val_sens95_untreated=0.8125 val_dice_pos=0.5311 minutes=33.4469
 [pb_bl_segformer_b2 s0] ep16 cls=0.0614 seg=0.3813 val_auroc=0.9591 val_sens95=0.7689 val_sens95_untreated=0.7812 val_dice_pos=0.5326 minutes=35.5208
 [pb_bl_segformer_b2 s0] ep17 cls=0.0540 seg=0.3720 val_auroc=0.9597 val_sens95=0.7731 val_sens95_untreated=0.7812 val_dice_pos=0.5327 minutes=37.5897
+[pb_bl_segformer_b2 s0] ep18 cls=0.0512 seg=0.3660 val_auroc=0.9588 val_sens95=0.7773 val_sens95_untreated=0.8125 val_dice_pos=0.5269 minutes=39.6638
+/workspace/ptx-deconfound/ptx/train.py:221: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(od / "best.pt", map_location=device))
+[pb_bl_segformer_b2 s0] ep19 cls=0.0519 seg=0.3672 val_auroc=0.9583 val_sens95=0.7773 val_sens95_untreated=0.8125 val_dice_pos=0.5261 minutes=41.7446
+external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+== [planb_main_c] pb_bl_segformer_b2 seed 1
+/usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+[pb_bl_segformer_b2 s1] ep0 cls=0.6331 seg=1.2532 val_auroc=0.8482 val_sens95=0.4496 val_sens95_untreated=0.0625 val_dice_pos=0.0558 minutes=2.0832
+[pb_bl_segformer_b2 s1] ep1 cls=0.4936 seg=0.8532 val_auroc=0.9085 val_sens95=0.5714 val_sens95_untreated=0.2500 val_dice_pos=0.3711 minutes=4.1619
+[pb_bl_segformer_b2 s1] ep2 cls=0.3966 seg=0.6887 val_auroc=0.9342 val_sens95=0.6429 val_sens95_untreated=0.3750 val_dice_pos=0.4207 minutes=6.2485
