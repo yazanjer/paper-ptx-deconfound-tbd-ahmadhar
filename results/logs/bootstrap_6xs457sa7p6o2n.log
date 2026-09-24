@@ -288,3 +288,12 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 /usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
   warnings.warn(
 [pb_full s4] ep0 cls=0.6060 seg=1.2325 adv=0.8654 val_auroc=0.9085 val_sens95=0.4286 val_sens95_untreated=0.4062 val_dice_pos=0.2682 minutes=2.2636
+[pb_full s4] ep1 cls=0.3659 seg=0.7843 adv=0.7180 val_auroc=0.9369 val_sens95=0.6555 val_sens95_untreated=0.4688 val_dice_pos=0.3616 minutes=4.5318
+[pb_full s4] ep2 cls=0.2841 seg=0.5998 adv=0.6343 val_auroc=0.9313 val_sens95=0.7101 val_sens95_untreated=0.4375 val_dice_pos=0.4167 minutes=6.7944
+[pb_full s4] ep3 cls=0.2431 seg=0.5432 adv=0.6481 val_auroc=0.9474 val_sens95=0.7185 val_sens95_untreated=0.7188 val_dice_pos=0.4944 minutes=9.0522
+[pb_full s4] ep4 cls=0.2132 seg=0.5085 adv=0.6199 val_auroc=0.9493 val_sens95=0.6723 val_sens95_untreated=0.6562 val_dice_pos=0.5216 minutes=11.3082
+[pb_full s4] ep5 cls=0.1678 seg=0.4748 adv=0.6268 val_auroc=0.9460 val_sens95=0.7059 val_sens95_untreated=0.7812 val_dice_pos=0.4951 minutes=13.5554
+[pb_full s4] ep6 cls=0.1440 seg=0.4584 adv=0.6182 val_auroc=0.9439 val_sens95=0.6933 val_sens95_untreated=0.7188 val_dice_pos=0.4620 minutes=15.8115
+[pb_full s4] ep7 cls=0.1184 seg=0.4383 adv=0.6045 val_auroc=0.9411 val_sens95=0.6597 val_sens95_untreated=0.6562 val_dice_pos=0.5023 minutes=18.0605
+[pb_full s4] ep8 cls=0.1071 seg=0.4324 adv=0.6125 val_auroc=0.9393 val_sens95=0.7521 val_sens95_untreated=0.7500 val_dice_pos=0.4802 minutes=20.3075
+[pb_full s4] ep9 cls=0.0754 seg=0.4104 adv=0.6074 val_auroc=0.9186 val_sens95=0.7101 val_sens95_untreated=0.6875 val_dice_pos=0.4301 minutes=22.5628
