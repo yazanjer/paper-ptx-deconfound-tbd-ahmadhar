@@ -19,6 +19,8 @@ REPO=$WS/ptx-deconfound
 mkdir -p $RAW $DATA
 export GIT_TERMINAL_PROMPT=0
 unz() { python -c "import zipfile,sys; zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])" "$1" "$2"; }  # image has no unzip
+# download a zip with retries until it is a valid archive (Zenodo sometimes returns an error page)
+fetch_zip() { for i in 1 2 3 4 5 6; do curl -sL -o "$2" "$1" && python -c "import zipfile,sys; sys.exit(0 if zipfile.is_zipfile(sys.argv[1]) else 1)" "$2" && return 0; echo "download of $1 failed (try $i); retrying"; sleep 60; done; return 1; }
 exec > >(tee -a $WS/bootstrap.log) 2>&1
 echo "=== bootstrap $(date -u) stages=[$STAGES] budget=${MAX_HOURS}h"
 
@@ -56,11 +58,11 @@ pip install -q -r requirements.txt
 if [[ " $STAGES " == *" data "* ]]; then
   mkdir -p ~/.kaggle && printf '{"username":"%s","key":"%s"}' "$KAGGLE_USERNAME" "$KAGGLE_KEY" > ~/.kaggle/kaggle.json && chmod 600 ~/.kaggle/kaggle.json
   if [ ! -f $DATA/ptx498/manifest.csv ]; then
-    curl -sL -o $RAW/ptx498.zip "https://zenodo.org/api/records/8266529/files/PTX-498-v2-fix.zip/content"
+    fetch_zip "https://zenodo.org/api/records/8266529/files/PTX-498-v2-fix.zip/content" $RAW/ptx498.zip
     unz $RAW/ptx498.zip $RAW/ptx498 && python -m ptx.data.prepare ptx498 --raw $RAW/ptx498 --out $DATA && rm -rf $RAW/ptx498 $RAW/ptx498.zip
   fi
   if [ ! -f $DATA/nih/manifest.csv ]; then
-    curl -sL -o $RAW/nih_cohort.zip "https://zenodo.org/api/records/22839698/files/Pneumothorax_Zenodo_READY_v1.0.0.zip/content"
+    fetch_zip "https://zenodo.org/api/records/22839698/files/Pneumothorax_Zenodo_READY_v1.0.0.zip/content" $RAW/nih_cohort.zip
     unz $RAW/nih_cohort.zip $RAW/nih_cohort
     have=$(python - <<PY
 import glob, os, pandas as pd
