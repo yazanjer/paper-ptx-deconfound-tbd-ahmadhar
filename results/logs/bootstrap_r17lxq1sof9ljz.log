@@ -108,3 +108,13 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 == [planb_main_b2] pb_bl_raddino_probe seed 2
 [pb_bl_raddino_probe s2] ep0 cls=0.5646 val_auroc=0.9118 val_sens95=0.5672 val_sens95_untreated=0.2500 minutes=0.9997
 [pb_bl_raddino_probe s2] ep1 cls=0.3823 val_auroc=0.9205 val_sens95=0.5882 val_sens95_untreated=0.3125 minutes=1.8995
+[pb_bl_raddino_probe s2] ep2 cls=0.3432 val_auroc=0.9221 val_sens95=0.6134 val_sens95_untreated=0.4062 minutes=2.8401
+[pb_bl_raddino_probe s2] ep3 cls=0.3481 val_auroc=0.9220 val_sens95=0.6218 val_sens95_untreated=0.3750 minutes=3.7680
+[pb_bl_raddino_probe s2] ep4 cls=0.3304 val_auroc=0.9221 val_sens95=0.6176 val_sens95_untreated=0.3750 minutes=4.6906
+[pb_bl_raddino_probe s2] ep5 cls=0.3243 val_auroc=0.9234 val_sens95=0.6261 val_sens95_untreated=0.3438 minutes=5.5567
+[pb_bl_raddino_probe s2] ep6 cls=0.3206 val_auroc=0.9235 val_sens95=0.6387 val_sens95_untreated=0.4062 minutes=6.5136
+[pb_bl_raddino_probe s2] ep7 cls=0.3052 val_auroc=0.9244 val_sens95=0.6681 val_sens95_untreated=0.5312 minutes=7.5282
+[pb_bl_raddino_probe s2] ep8 cls=0.3227 val_auroc=0.9236 val_sens95=0.6387 val_sens95_untreated=0.4062 minutes=8.5135
+[pb_bl_raddino_probe s2] ep9 cls=0.3024 val_auroc=0.9245 val_sens95=0.6471 val_sens95_untreated=0.3750 minutes=9.5298
+[pb_bl_raddino_probe s2] ep10 cls=0.2938 val_auroc=0.9254 val_sens95=0.6387 val_sens95_untreated=0.3438 minutes=10.5594
+[pb_bl_raddino_probe s2] ep11 cls=0.3093 val_auroc=0.9251 val_sens95=0.6345 val_sens95_untreated=0.3438 minutes=11.5972
