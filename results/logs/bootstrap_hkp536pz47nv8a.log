@@ -211,3 +211,18 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_sens_lambda1 s2] ep15 cls=0.0240 seg=0.3699 adv=0.6062 val_auroc=0.9376 val_sens95=0.7647 val_sens95_untreated=0.7812 val_dice_pos=0.4753 minutes=36.5838
 [pb_sens_lambda1 s2] ep16 cls=0.0255 seg=0.3695 adv=0.6016 val_auroc=0.9378 val_sens95=0.7731 val_sens95_untreated=0.8125 val_dice_pos=0.4711 minutes=38.8869
 [pb_sens_lambda1 s2] ep17 cls=0.0200 seg=0.3559 adv=0.6032 val_auroc=0.9393 val_sens95=0.7689 val_sens95_untreated=0.8125 val_dice_pos=0.4877 minutes=41.1853
+[pb_sens_lambda1 s2] ep18 cls=0.0173 seg=0.3580 adv=0.6049 val_auroc=0.9368 val_sens95=0.7689 val_sens95_untreated=0.7812 val_dice_pos=0.4868 minutes=43.5147
+/workspace/ptx-deconfound/ptx/train.py:221: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(od / "best.pt", map_location=device))
+[pb_sens_lambda1 s2] ep19 cls=0.0178 seg=0.3599 adv=0.6067 val_auroc=0.9373 val_sens95=0.7647 val_sens95_untreated=0.7812 val_dice_pos=0.4849 minutes=45.8345
+external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+queue finished
+6 weight files
+pb_bl_segformer_b2__seed0.pt 201
+pb_bl_segformer_b2__seed1.pt 201
+pb_bl_segformer_b2__seed2.pt 201
+pb_sens_lambda1__seed0.pt 201
+pb_sens_lambda1__seed1.pt 201
+pb_sens_lambda1__seed2.pt 201
+=== finished Thu Sep 24 19:25:04 UTC 2026
