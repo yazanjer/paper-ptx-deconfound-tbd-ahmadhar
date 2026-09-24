@@ -173,3 +173,8 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_sens_lambda1 s1] ep4 cls=0.2794 seg=0.5794 adv=0.6425 val_auroc=0.9412 val_sens95=0.6933 val_sens95_untreated=0.5938 val_dice_pos=0.4359 minutes=11.3906
 [pb_sens_lambda1 s1] ep5 cls=0.2475 seg=0.5502 adv=0.6275 val_auroc=0.9509 val_sens95=0.6933 val_sens95_untreated=0.5625 val_dice_pos=0.4846 minutes=13.6635
 [pb_sens_lambda1 s1] ep6 cls=0.2197 seg=0.5148 adv=0.6191 val_auroc=0.9422 val_sens95=0.6807 val_sens95_untreated=0.6875 val_dice_pos=0.4193 minutes=15.9203
+[pb_sens_lambda1 s1] ep7 cls=0.1916 seg=0.5040 adv=0.6184 val_auroc=0.9451 val_sens95=0.7059 val_sens95_untreated=0.7812 val_dice_pos=0.4760 minutes=18.1896
+[pb_sens_lambda1 s1] ep8 cls=0.1641 seg=0.4781 adv=0.6134 val_auroc=0.9512 val_sens95=0.7437 val_sens95_untreated=0.8438 val_dice_pos=0.5064 minutes=20.4559
+[pb_sens_lambda1 s1] ep9 cls=0.1379 seg=0.4612 adv=0.6090 val_auroc=0.9399 val_sens95=0.7017 val_sens95_untreated=0.7812 val_dice_pos=0.4618 minutes=22.7234
+[pb_sens_lambda1 s1] ep10 cls=0.1275 seg=0.4489 adv=0.6061 val_auroc=0.9430 val_sens95=0.7185 val_sens95_untreated=0.8125 val_dice_pos=0.4747 minutes=24.9842
+[pb_sens_lambda1 s1] ep11 cls=0.1025 seg=0.4438 adv=0.6039 val_auroc=0.9420 val_sens95=0.7269 val_sens95_untreated=0.8125 val_dice_pos=0.4704 minutes=27.2401
