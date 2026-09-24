@@ -286,3 +286,10 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 == [planb_main_b] pb_bl_unet_r34_kaggle seed 1
 /usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
   warnings.warn(
+[pb_bl_unet_r34_kaggle s1] ep0 cls=0.6574 seg=1.3107 val_auroc=0.8417 val_sens95=0.4328 val_sens95_untreated=0.0000 val_dice_pos=0.0640 minutes=1.3359
+[pb_bl_unet_r34_kaggle s1] ep1 cls=0.5522 seg=0.9892 val_auroc=0.8391 val_sens95=0.4034 val_sens95_untreated=0.0312 val_dice_pos=0.1719 minutes=2.6959
+[pb_bl_unet_r34_kaggle s1] ep2 cls=0.4991 seg=0.8361 val_auroc=0.8551 val_sens95=0.3950 val_sens95_untreated=0.0938 val_dice_pos=0.1912 minutes=4.0638
+[pb_bl_unet_r34_kaggle s1] ep3 cls=0.4354 seg=0.7381 val_auroc=0.9284 val_sens95=0.5882 val_sens95_untreated=0.2812 val_dice_pos=0.3949 minutes=5.3949
+[pb_bl_unet_r34_kaggle s1] ep4 cls=0.3986 seg=0.6917 val_auroc=0.9089 val_sens95=0.5210 val_sens95_untreated=0.4375 val_dice_pos=0.4258 minutes=6.7402
+[pb_bl_unet_r34_kaggle s1] ep5 cls=0.3733 seg=0.6417 val_auroc=0.9244 val_sens95=0.5756 val_sens95_untreated=0.4062 val_dice_pos=0.3722 minutes=8.0730
+[pb_bl_unet_r34_kaggle s1] ep6 cls=0.3546 seg=0.6317 val_auroc=0.9299 val_sens95=0.6176 val_sens95_untreated=0.4688 val_dice_pos=0.4090 minutes=9.3937
