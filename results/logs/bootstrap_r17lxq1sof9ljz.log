@@ -118,3 +118,17 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_bl_raddino_probe s2] ep9 cls=0.3024 val_auroc=0.9245 val_sens95=0.6471 val_sens95_untreated=0.3750 minutes=9.5298
 [pb_bl_raddino_probe s2] ep10 cls=0.2938 val_auroc=0.9254 val_sens95=0.6387 val_sens95_untreated=0.3438 minutes=10.5594
 [pb_bl_raddino_probe s2] ep11 cls=0.3093 val_auroc=0.9251 val_sens95=0.6345 val_sens95_untreated=0.3438 minutes=11.5972
+[pb_bl_raddino_probe s2] ep12 cls=0.2866 val_auroc=0.9250 val_sens95=0.6303 val_sens95_untreated=0.3438 minutes=12.6420
+[pb_bl_raddino_probe s2] ep13 cls=0.3050 val_auroc=0.9252 val_sens95=0.6429 val_sens95_untreated=0.3750 minutes=13.7013
+[pb_bl_raddino_probe s2] ep14 cls=0.2938 val_auroc=0.9258 val_sens95=0.6303 val_sens95_untreated=0.3438 minutes=14.7273
+[pb_bl_raddino_probe s2] ep15 cls=0.3088 val_auroc=0.9259 val_sens95=0.6345 val_sens95_untreated=0.3750 minutes=15.7752
+[pb_bl_raddino_probe s2] ep16 cls=0.2968 val_auroc=0.9257 val_sens95=0.6303 val_sens95_untreated=0.3750 minutes=16.9256
+[pb_bl_raddino_probe s2] ep17 cls=0.3034 val_auroc=0.9259 val_sens95=0.6176 val_sens95_untreated=0.3438 minutes=17.9247
+[pb_bl_raddino_probe s2] ep18 cls=0.3046 val_auroc=0.9259 val_sens95=0.6218 val_sens95_untreated=0.3750 minutes=18.8821
+/workspace/ptx-deconfound/ptx/train.py:221: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(od / "best.pt", map_location=device))
+[pb_bl_raddino_probe s2] ep19 cls=0.2940 val_auroc=0.9259 val_sens95=0.6218 val_sens95_untreated=0.3750 minutes=19.8957
+external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+== [planb_main_b2] pb_bl_raddino_probe seed 3
+[pb_bl_raddino_probe s3] ep0 cls=0.5524 val_auroc=0.9162 val_sens95=0.5546 val_sens95_untreated=0.2812 minutes=1.0609
