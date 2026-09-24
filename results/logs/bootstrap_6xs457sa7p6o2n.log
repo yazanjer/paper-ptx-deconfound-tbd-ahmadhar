@@ -767,3 +767,7 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 == [planb_main_a] pb_sens_lambda001 seed 2
 [pb_sens_lambda001 s2] ep0 cls=0.5066 seg=1.0413 adv=0.4687 val_auroc=0.8953 val_sens95=0.5462 val_sens95_untreated=0.5312 val_dice_pos=0.2938 minutes=2.2677
 [pb_sens_lambda001 s2] ep1 cls=0.3405 seg=0.6816 adv=0.4735 val_auroc=0.9366 val_sens95=0.6261 val_sens95_untreated=0.5625 val_dice_pos=0.4488 minutes=4.5412
+[pb_sens_lambda001 s2] ep2 cls=0.2837 seg=0.5790 adv=0.4738 val_auroc=0.9431 val_sens95=0.6723 val_sens95_untreated=0.7812 val_dice_pos=0.4914 minutes=6.8369
+[pb_sens_lambda001 s2] ep3 cls=0.2268 seg=0.5286 adv=0.4939 val_auroc=0.9447 val_sens95=0.7101 val_sens95_untreated=0.6875 val_dice_pos=0.5087 minutes=9.1328
+[pb_sens_lambda001 s2] ep4 cls=0.1860 seg=0.4944 adv=0.5052 val_auroc=0.9273 val_sens95=0.7101 val_sens95_untreated=0.7500 val_dice_pos=0.5005 minutes=11.3922
+[pb_sens_lambda001 s2] ep5 cls=0.1650 seg=0.4692 adv=0.5126 val_auroc=0.9308 val_sens95=0.7311 val_sens95_untreated=0.7812 val_dice_pos=0.4658 minutes=13.6425

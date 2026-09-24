@@ -132,3 +132,13 @@ external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 == [planb_main_b2] pb_bl_raddino_probe seed 3
 [pb_bl_raddino_probe s3] ep0 cls=0.5524 val_auroc=0.9162 val_sens95=0.5546 val_sens95_untreated=0.2812 minutes=1.0609
+[pb_bl_raddino_probe s3] ep1 cls=0.3810 val_auroc=0.9223 val_sens95=0.6176 val_sens95_untreated=0.3125 minutes=2.1635
+[pb_bl_raddino_probe s3] ep2 cls=0.3616 val_auroc=0.9197 val_sens95=0.6387 val_sens95_untreated=0.3750 minutes=3.2615
+[pb_bl_raddino_probe s3] ep3 cls=0.3343 val_auroc=0.9236 val_sens95=0.6345 val_sens95_untreated=0.3438 minutes=4.3090
+[pb_bl_raddino_probe s3] ep4 cls=0.3298 val_auroc=0.9266 val_sens95=0.6597 val_sens95_untreated=0.3750 minutes=5.3169
+[pb_bl_raddino_probe s3] ep5 cls=0.3317 val_auroc=0.9275 val_sens95=0.6261 val_sens95_untreated=0.3750 minutes=6.3603
+[pb_bl_raddino_probe s3] ep6 cls=0.3218 val_auroc=0.9277 val_sens95=0.6387 val_sens95_untreated=0.3750 minutes=7.3964
+[pb_bl_raddino_probe s3] ep7 cls=0.3133 val_auroc=0.9272 val_sens95=0.5924 val_sens95_untreated=0.3125 minutes=8.5138
+[pb_bl_raddino_probe s3] ep8 cls=0.2953 val_auroc=0.9285 val_sens95=0.6303 val_sens95_untreated=0.4375 minutes=9.6284
+[pb_bl_raddino_probe s3] ep9 cls=0.3056 val_auroc=0.9269 val_sens95=0.6261 val_sens95_untreated=0.4062 minutes=10.7174
+[pb_bl_raddino_probe s3] ep10 cls=0.3067 val_auroc=0.9270 val_sens95=0.6134 val_sens95_untreated=0.3750 minutes=11.7875
