@@ -1,0 +1,9 @@
+{
+  "patient_overlap": {
+    "test_internal&train": 0,
+    "test_internal&val": 0,
+    "train&val": 0
+  },
+  "train_test_near_duplicates": 4,
+  "pass": false
+}
