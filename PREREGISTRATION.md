@@ -109,4 +109,17 @@ runs in parallel and is reported as such. If CANDID-PTX arrives before Gate 2, t
 
 ## Deviations
 
-(none yet)
+Recorded 2026-09-24, before the pre-registration was frozen and before any external test set was opened.
+
+1. **Plan B baselines actually run.** U-Net ResNet34, U-Net EfficientNet-B4 (= `pb_no_c2`, the
+   proposed architecture without C2), Group DRO, auxiliary tube/device classifier, RAD-DINO linear
+   probe and fine-tuned (5 seeds each); SegFormer-B2 (3 seeds). Not run in Plan B: nnU-Net 2D and
+   zero-shot MLLMs (to be run afterwards and reported as secondary comparisons only; they do not enter
+   the "best baseline" used for A1-A8), and tube-as-extra-class segmentation (needs tube masks, like C1/C3).
+2. **Sensitivity runs in Plan B.** Adversarial weight 0.01 and 1.0 (3 seeds each). The mean-fill
+   inpainting run is dropped because C1 is not part of Plan B.
+3. **Infrastructure only, no effect on endpoints.** Runs were split over several pods. The first
+   RAD-DINO attempt stopped at model loading (library version conflict) before any training, and was
+   re-run unchanged after pinning `transformers<4.50`. Two U-Net ResNet34 seeds were re-trained after a
+   result-upload failure on one pod; the re-trained runs are the ones reported. No external set was
+   opened for any of these.
