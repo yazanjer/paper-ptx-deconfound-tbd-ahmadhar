@@ -465,3 +465,14 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_bl_bandaru_auxcls s2] ep14 cls=0.0098 seg=0.2753 aux_cls=0.0068 val_auroc=0.9505 val_sens95=0.7311 val_sens95_untreated=0.7188 val_dice_pos=0.4944 minutes=33.8039
 [pb_bl_bandaru_auxcls s2] ep15 cls=0.0043 seg=0.2590 aux_cls=0.0044 val_auroc=0.9501 val_sens95=0.7311 val_sens95_untreated=0.6875 val_dice_pos=0.4918 minutes=36.0540
 [pb_bl_bandaru_auxcls s2] ep16 cls=0.0080 seg=0.2589 aux_cls=0.0035 val_auroc=0.9527 val_sens95=0.7311 val_sens95_untreated=0.6875 val_dice_pos=0.5023 minutes=38.3023
+[pb_bl_bandaru_auxcls s2] ep17 cls=0.0068 seg=0.2545 aux_cls=0.0055 val_auroc=0.9526 val_sens95=0.7227 val_sens95_untreated=0.6875 val_dice_pos=0.5061 minutes=40.5472
+[pb_bl_bandaru_auxcls s2] ep18 cls=0.0027 seg=0.2558 aux_cls=0.0045 val_auroc=0.9515 val_sens95=0.7269 val_sens95_untreated=0.6875 val_dice_pos=0.4955 minutes=42.7890
+/workspace/ptx-deconfound/ptx/train.py:221: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(od / "best.pt", map_location=device))
+[pb_bl_bandaru_auxcls s2] ep19 cls=0.0029 seg=0.2503 aux_cls=0.0041 val_auroc=0.9513 val_sens95=0.7227 val_sens95_untreated=0.6875 val_dice_pos=0.4966 minutes=45.0464
+external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+== [planb_main_b] pb_bl_bandaru_auxcls seed 3
+/usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+[pb_bl_bandaru_auxcls s3] ep0 cls=0.4935 seg=1.1192 aux_cls=0.1613 val_auroc=0.9170 val_sens95=0.5126 val_sens95_untreated=0.2812 val_dice_pos=0.4552 minutes=2.2513
