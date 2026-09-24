@@ -661,3 +661,8 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
   warnings.warn(
 [pb_base s3] ep0 cls=0.4696 seg=1.1222 val_auroc=0.9287 val_sens95=0.6723 val_sens95_untreated=0.4688 val_dice_pos=0.4239 minutes=2.2539
 [pb_base s3] ep1 cls=0.3130 seg=0.5631 val_auroc=0.9398 val_sens95=0.7311 val_sens95_untreated=0.8125 val_dice_pos=0.4810 minutes=4.5096
+[pb_base s3] ep2 cls=0.2504 seg=0.4870 val_auroc=0.9437 val_sens95=0.7185 val_sens95_untreated=0.7188 val_dice_pos=0.5401 minutes=6.7914
+[pb_base s3] ep3 cls=0.1888 seg=0.4498 val_auroc=0.9492 val_sens95=0.7689 val_sens95_untreated=0.6875 val_dice_pos=0.5405 minutes=9.0466
+[pb_base s3] ep4 cls=0.1537 seg=0.4291 val_auroc=0.9347 val_sens95=0.6513 val_sens95_untreated=0.6250 val_dice_pos=0.4826 minutes=11.2972
+[pb_base s3] ep5 cls=0.1193 seg=0.4054 val_auroc=0.9452 val_sens95=0.7101 val_sens95_untreated=0.6562 val_dice_pos=0.5333 minutes=13.5720
+[pb_base s3] ep6 cls=0.0915 seg=0.3900 val_auroc=0.9444 val_sens95=0.7101 val_sens95_untreated=0.7500 val_dice_pos=0.5343 minutes=15.8421
