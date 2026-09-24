@@ -503,3 +503,8 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_bl_bandaru_auxcls s4] ep0 cls=0.4663 seg=1.1376 aux_cls=0.1636 val_auroc=0.9214 val_sens95=0.6555 val_sens95_untreated=0.3750 val_dice_pos=0.4482 minutes=2.2680
 [pb_bl_bandaru_auxcls s4] ep1 cls=0.3304 seg=0.5942 aux_cls=0.0926 val_auroc=0.9296 val_sens95=0.6387 val_sens95_untreated=0.3438 val_dice_pos=0.4762 minutes=4.5643
 [pb_bl_bandaru_auxcls s4] ep2 cls=0.2536 seg=0.4881 aux_cls=0.0699 val_auroc=0.9445 val_sens95=0.7185 val_sens95_untreated=0.5000 val_dice_pos=0.5155 minutes=6.8552
+[pb_bl_bandaru_auxcls s4] ep3 cls=0.2039 seg=0.4601 aux_cls=0.0569 val_auroc=0.9252 val_sens95=0.6681 val_sens95_untreated=0.7500 val_dice_pos=0.5130 minutes=9.1373
+[pb_bl_bandaru_auxcls s4] ep4 cls=0.1611 seg=0.4291 aux_cls=0.0520 val_auroc=0.9481 val_sens95=0.7143 val_sens95_untreated=0.7500 val_dice_pos=0.5375 minutes=11.4111
+[pb_bl_bandaru_auxcls s4] ep5 cls=0.1202 seg=0.4036 aux_cls=0.0416 val_auroc=0.9491 val_sens95=0.6807 val_sens95_untreated=0.7500 val_dice_pos=0.5322 minutes=13.6821
+[pb_bl_bandaru_auxcls s4] ep6 cls=0.0878 seg=0.3855 aux_cls=0.0383 val_auroc=0.9442 val_sens95=0.6933 val_sens95_untreated=0.5312 val_dice_pos=0.5178 minutes=15.9293
+[pb_bl_bandaru_auxcls s4] ep7 cls=0.0807 seg=0.3709 aux_cls=0.0280 val_auroc=0.9438 val_sens95=0.7395 val_sens95_untreated=0.6875 val_dice_pos=0.5303 minutes=18.1926
