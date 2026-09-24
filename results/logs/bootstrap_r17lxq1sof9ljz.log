@@ -297,3 +297,24 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 [pb_bl_raddino_ft s4] ep13 cls=0.0080 val_auroc=0.9387 val_sens95=0.7395 val_sens95_untreated=0.7188 minutes=35.0082
 [pb_bl_raddino_ft s4] ep14 cls=0.0069 val_auroc=0.9399 val_sens95=0.7269 val_sens95_untreated=0.6562 minutes=37.5086
 [pb_bl_raddino_ft s4] ep15 cls=0.0051 val_auroc=0.9406 val_sens95=0.7353 val_sens95_untreated=0.6250 minutes=39.9889
+[pb_bl_raddino_ft s4] ep16 cls=0.0026 val_auroc=0.9413 val_sens95=0.7479 val_sens95_untreated=0.6250 minutes=42.4732
+[pb_bl_raddino_ft s4] ep17 cls=0.0017 val_auroc=0.9418 val_sens95=0.7479 val_sens95_untreated=0.6250 minutes=44.9675
+[pb_bl_raddino_ft s4] ep18 cls=0.0015 val_auroc=0.9420 val_sens95=0.7479 val_sens95_untreated=0.6250 minutes=47.4512
+/workspace/ptx-deconfound/ptx/train.py:221: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(od / "best.pt", map_location=device))
+[pb_bl_raddino_ft s4] ep19 cls=0.0014 val_auroc=0.9420 val_sens95=0.7479 val_sens95_untreated=0.6250 minutes=49.9387
+external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
+queue finished
+10 weight files
+pb_bl_raddino_ft__seed0.pt 201
+pb_bl_raddino_ft__seed1.pt 201
+pb_bl_raddino_ft__seed2.pt 201
+pb_bl_raddino_ft__seed3.pt 201
+pb_bl_raddino_ft__seed4.pt 201
+pb_bl_raddino_probe__seed0.pt 201
+pb_bl_raddino_probe__seed1.pt 201
+pb_bl_raddino_probe__seed2.pt 201
+pb_bl_raddino_probe__seed3.pt 201
+pb_bl_raddino_probe__seed4.pt 201
+=== finished Thu Sep 24 20:50:42 UTC 2026
