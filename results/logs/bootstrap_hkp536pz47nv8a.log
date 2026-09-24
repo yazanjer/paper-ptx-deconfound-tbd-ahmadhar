@@ -67,3 +67,7 @@ wrote results/mask_checks/ptx498_overlays.jpg
 [pb_bl_segformer_b2 s0] ep6 cls=0.2521 seg=0.5137 val_auroc=0.9455 val_sens95=0.7227 val_sens95_untreated=0.7500 val_dice_pos=0.5237 minutes=14.5946
 [pb_bl_segformer_b2 s0] ep7 cls=0.2197 seg=0.4936 val_auroc=0.9482 val_sens95=0.7143 val_sens95_untreated=0.6250 val_dice_pos=0.4979 minutes=16.6998
 [pb_bl_segformer_b2 s0] ep8 cls=0.2283 seg=0.4827 val_auroc=0.9579 val_sens95=0.7731 val_sens95_untreated=0.7812 val_dice_pos=0.5316 minutes=18.8011
+[pb_bl_segformer_b2 s0] ep9 cls=0.1793 seg=0.4602 val_auroc=0.9533 val_sens95=0.7605 val_sens95_untreated=0.7500 val_dice_pos=0.5097 minutes=20.9264
+[pb_bl_segformer_b2 s0] ep10 cls=0.1615 seg=0.4522 val_auroc=0.9585 val_sens95=0.7773 val_sens95_untreated=0.8125 val_dice_pos=0.5140 minutes=23.0171
+[pb_bl_segformer_b2 s0] ep11 cls=0.1343 seg=0.4330 val_auroc=0.9545 val_sens95=0.7773 val_sens95_untreated=0.8125 val_dice_pos=0.5291 minutes=25.1157
+[pb_bl_segformer_b2 s0] ep12 cls=0.1208 seg=0.4228 val_auroc=0.9547 val_sens95=0.7899 val_sens95_untreated=0.8438 val_dice_pos=0.5278 minutes=27.1935
