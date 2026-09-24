@@ -58,3 +58,13 @@ wrote results/mask_checks/ptx498_overlays.jpg
 == [planb_main_b2] pb_bl_raddino_probe seed 0
 [pb_bl_raddino_probe s0] ep0 cls=0.5502 val_auroc=0.9144 val_sens95=0.6218 val_sens95_untreated=0.3125 minutes=1.0141
 [pb_bl_raddino_probe s0] ep1 cls=0.3760 val_auroc=0.9216 val_sens95=0.6513 val_sens95_untreated=0.3438 minutes=2.0097
+[pb_bl_raddino_probe s0] ep2 cls=0.3439 val_auroc=0.9228 val_sens95=0.6429 val_sens95_untreated=0.3125 minutes=3.0527
+[pb_bl_raddino_probe s0] ep3 cls=0.3325 val_auroc=0.9230 val_sens95=0.6261 val_sens95_untreated=0.3750 minutes=4.0666
+[pb_bl_raddino_probe s0] ep4 cls=0.3337 val_auroc=0.9260 val_sens95=0.6176 val_sens95_untreated=0.3750 minutes=5.1305
+[pb_bl_raddino_probe s0] ep5 cls=0.3156 val_auroc=0.9246 val_sens95=0.6513 val_sens95_untreated=0.3750 minutes=6.1760
+[pb_bl_raddino_probe s0] ep6 cls=0.3204 val_auroc=0.9238 val_sens95=0.6723 val_sens95_untreated=0.4375 minutes=7.2468
+[pb_bl_raddino_probe s0] ep7 cls=0.3169 val_auroc=0.9241 val_sens95=0.6555 val_sens95_untreated=0.4375 minutes=8.3288
+[pb_bl_raddino_probe s0] ep8 cls=0.3198 val_auroc=0.9266 val_sens95=0.6387 val_sens95_untreated=0.4375 minutes=9.2835
+[pb_bl_raddino_probe s0] ep9 cls=0.3100 val_auroc=0.9264 val_sens95=0.6345 val_sens95_untreated=0.3125 minutes=10.2703
+[pb_bl_raddino_probe s0] ep10 cls=0.3093 val_auroc=0.9252 val_sens95=0.6387 val_sens95_untreated=0.3125 minutes=11.2862
+[pb_bl_raddino_probe s0] ep11 cls=0.3097 val_auroc=0.9273 val_sens95=0.6597 val_sens95_untreated=0.4375 minutes=12.1907
