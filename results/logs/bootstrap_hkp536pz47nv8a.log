@@ -58,3 +58,7 @@ wrote results/mask_checks/ptx498_overlays.jpg
 == [planb_main_c] pb_bl_segformer_b2 seed 0
 /usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
   warnings.warn(
+[pb_bl_segformer_b2 s0] ep0 cls=0.5904 seg=1.1197 val_auroc=0.8654 val_sens95=0.4454 val_sens95_untreated=0.1250 val_dice_pos=0.0885 minutes=2.1126
+[pb_bl_segformer_b2 s0] ep1 cls=0.4729 seg=0.7910 val_auroc=0.9237 val_sens95=0.6429 val_sens95_untreated=0.4062 val_dice_pos=0.4102 minutes=4.2015
+[pb_bl_segformer_b2 s0] ep2 cls=0.3725 seg=0.6466 val_auroc=0.9454 val_sens95=0.7059 val_sens95_untreated=0.5312 val_dice_pos=0.4564 minutes=6.2944
+[pb_bl_segformer_b2 s0] ep3 cls=0.3434 seg=0.6001 val_auroc=0.9421 val_sens95=0.6849 val_sens95_untreated=0.5000 val_dice_pos=0.4926 minutes=8.3753
