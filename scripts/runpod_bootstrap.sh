@@ -38,7 +38,10 @@ trap finish EXIT
 if [ ! -d $REPO/.git ]; then
   git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/yazanjer/ptx-deconfound.git" $REPO
 fi
-cd $REPO && { git rebase --abort 2>/dev/null; rm -rf .git/rebase-merge .git/rebase-apply; git fetch -q origin main && git reset -q --hard origin/main; }
+cd $REPO && { git rebase --abort 2>/dev/null; rm -rf .git/rebase-merge .git/rebase-apply
+  mkdir -p $WS/keep && [ -d results/runs ] && cp -rn results/runs $WS/keep/   # keep finished runs not yet pushed
+  git fetch -q origin main && git reset -q --hard origin/main
+  [ -d $WS/keep/runs ] && mkdir -p results/runs && cp -rn $WS/keep/runs/. results/runs/; }
 # fail fast if the token cannot push (otherwise hours of results would be lost)
 mkdir -p results/logs && date -u > results/logs/start_${RUNPOD_POD_ID:-local}.txt
 git add results/logs && git -c user.name=ptx-runner -c user.email=ptx-runner@users.noreply.github.com commit -q -m "pod start ${RUNPOD_POD_ID:-local}"
