@@ -528,3 +528,8 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 /usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:216: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
   warnings.warn(
 [pb_bl_groupdro s0] ep0 cls=1.2032 seg=1.4529 val_auroc=0.8558 val_sens95=0.3655 val_sens95_untreated=0.0312 val_dice_pos=0.0000 minutes=2.2763
+[pb_bl_groupdro s0] ep1 cls=0.4301 seg=0.9111 val_auroc=0.9070 val_sens95=0.5840 val_sens95_untreated=0.4688 val_dice_pos=0.3883 minutes=4.5449
+[pb_bl_groupdro s0] ep2 cls=0.3456 seg=0.6802 val_auroc=0.9305 val_sens95=0.6134 val_sens95_untreated=0.5625 val_dice_pos=0.4398 minutes=6.8126
+[pb_bl_groupdro s0] ep3 cls=0.3012 seg=0.5919 val_auroc=0.9417 val_sens95=0.6933 val_sens95_untreated=0.6562 val_dice_pos=0.4585 minutes=9.0724
+[pb_bl_groupdro s0] ep4 cls=0.2716 seg=0.5521 val_auroc=0.9203 val_sens95=0.7311 val_sens95_untreated=0.5938 val_dice_pos=0.4283 minutes=11.3379
+[pb_bl_groupdro s0] ep5 cls=0.2546 seg=0.5259 val_auroc=0.9308 val_sens95=0.6807 val_sens95_untreated=0.7188 val_dice_pos=0.4141 minutes=13.5836
