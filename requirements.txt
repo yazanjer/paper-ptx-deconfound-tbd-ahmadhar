@@ -2,7 +2,7 @@ torch>=2.2
 torchvision
 segmentation-models-pytorch>=0.4
 timm
-transformers>=4.40
+transformers>=4.40,<4.50  # newer releases need torch>=2.5; the RunPod image ships 2.4
 numpy
 pandas
 scipy
