@@ -57,6 +57,12 @@ stages:
     - {config: pb_bl_raddino_ft,      seeds: seeds_full}
     - {config: pb_bl_segformer_b2,    seeds: seeds_heavy}
     - {config: pb_sens_lambda1,       seeds: seeds_heavy}
+  planb_main_b2:    # re-queue after the transformers/torch fix (pod B)
+    - {config: pb_bl_raddino_probe,   seeds: seeds_full}
+    - {config: pb_bl_raddino_ft,      seeds: seeds_full}
+  planb_main_c:     # remaining heavy baseline + sensitivity run (pod C)
+    - {config: pb_bl_segformer_b2,    seeds: seeds_heavy}
+    - {config: pb_sens_lambda1,       seeds: seeds_heavy}
   planb_gate2:
     - {command: "bash scripts/freeze_prereg.sh"}
     - {command: "python -m ptx.data.leakage --data {data} --splits splits --dev siim"}
