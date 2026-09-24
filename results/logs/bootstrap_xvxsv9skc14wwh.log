@@ -423,3 +423,7 @@ external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
   warnings.warn(
 [pb_bl_bandaru_auxcls s1] ep0 cls=0.4770 seg=1.2851 aux_cls=0.1751 val_auroc=0.9007 val_sens95=0.5378 val_sens95_untreated=0.5625 val_dice_pos=0.4367 minutes=2.2689
 [pb_bl_bandaru_auxcls s1] ep1 cls=0.3257 seg=0.6046 aux_cls=0.0857 val_auroc=0.9366 val_sens95=0.6597 val_sens95_untreated=0.5312 val_dice_pos=0.5137 minutes=4.5343
+[pb_bl_bandaru_auxcls s1] ep2 cls=0.2504 seg=0.4904 aux_cls=0.0673 val_auroc=0.9478 val_sens95=0.6597 val_sens95_untreated=0.5000 val_dice_pos=0.5335 minutes=6.7869
+[pb_bl_bandaru_auxcls s1] ep3 cls=0.1978 seg=0.4568 aux_cls=0.0529 val_auroc=0.9452 val_sens95=0.6555 val_sens95_untreated=0.7500 val_dice_pos=0.5318 minutes=9.0469
+[pb_bl_bandaru_auxcls s1] ep4 cls=0.1488 seg=0.4386 aux_cls=0.0527 val_auroc=0.9430 val_sens95=0.7227 val_sens95_untreated=0.7812 val_dice_pos=0.5482 minutes=11.3092
+[pb_bl_bandaru_auxcls s1] ep5 cls=0.1258 seg=0.4102 aux_cls=0.0387 val_auroc=0.9399 val_sens95=0.6261 val_sens95_untreated=0.7500 val_dice_pos=0.5179 minutes=13.5788
