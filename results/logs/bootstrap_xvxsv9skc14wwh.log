@@ -580,3 +580,7 @@ external set nih/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 external set ptx498/test locked (set PTX_UNLOCK_EXTERNAL=1 at Gate 2)
 == [planb_main_b] pb_bl_groupdro seed 2
 [pb_bl_groupdro s2] ep0 cls=0.4797 seg=1.0466 val_auroc=0.9158 val_sens95=0.6008 val_sens95_untreated=0.5000 val_dice_pos=0.2885 minutes=2.2776
+[pb_bl_groupdro s2] ep1 cls=0.3555 seg=0.7120 val_auroc=0.9181 val_sens95=0.6681 val_sens95_untreated=0.7812 val_dice_pos=0.4472 minutes=4.5433
+[pb_bl_groupdro s2] ep2 cls=0.2927 seg=0.5925 val_auroc=0.9372 val_sens95=0.7059 val_sens95_untreated=0.8438 val_dice_pos=0.4356 minutes=6.8024
+[pb_bl_groupdro s2] ep3 cls=0.2546 seg=0.5417 val_auroc=0.9496 val_sens95=0.7227 val_sens95_untreated=0.7188 val_dice_pos=0.4629 minutes=9.0666
+[pb_bl_groupdro s2] ep4 cls=0.2084 seg=0.5112 val_auroc=0.9071 val_sens95=0.6218 val_sens95_untreated=0.7188 val_dice_pos=0.3441 minutes=11.3213
