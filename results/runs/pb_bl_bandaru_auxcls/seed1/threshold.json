@@ -1,0 +1,11 @@
+{
+  "threshold_spec95": 0.9217811291730751,
+  "val": {
+    "auroc": 0.9429554692805953,
+    "sens95": 0.7226890756302521,
+    "sens95_untreated": 0.78125,
+    "dice_pos": 0.5481756354576709
+  },
+  "select_metric": "sens95_untreated",
+  "best": 0.78125
+}

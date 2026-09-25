@@ -1,0 +1,37 @@
+audit: false
+data:
+  dev: nih
+  root: /workspace/data
+  size: 512
+  splits: splits
+  train_split: pilot_train
+  val_split: pilot_val
+eval:
+  sets: []
+loss:
+  w_adv: 1.0
+  w_aux_cls: 0.5
+  w_seg: 0.0
+  w_tube_seg: 0.5
+model:
+  adv_device: true
+  adv_lambda: 0.1
+  arch: unet
+  aux_tube_cls: false
+  aux_tube_seg: false
+  encoder: efficientnet-b4
+  mask_pool: false
+  pretrained: imagenet
+  type: ptxnet
+name: pilot_nih_adv
+train:
+  balance_pos: 0.5
+  batch_size: 16
+  epochs: 20
+  group_dro: false
+  inpaint_method: telea
+  inpaint_p: 0.0
+  lr: 0.0003
+  select_metric: sens95_untreated
+  weight_decay: 0.0001
+  workers: 8
