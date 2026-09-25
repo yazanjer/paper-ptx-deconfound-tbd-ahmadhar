@@ -70,3 +70,5 @@ stages:
     - {command: "for i in $(seq 12); do python scripts/fetch_weights.py --runs results/runs && exit 0; sleep 300; done; exit 1"}  # last pod uploads weights after its final run
     - {command: "python -m ptx.evaluate_external --runs results/runs"}
     - {command: "python -m ptx.eval.acceptance --spec configs/acceptance_planb.yaml --runs results/runs --out results/planb"}
+  paper_figs:       # manuscript figures only (no training, no new metrics)
+    - {command: "for i in $(seq 3); do python scripts/fetch_weights.py --runs results/runs && break; sleep 60; done; python scripts/render_paper_figs.py --data {data}"}
