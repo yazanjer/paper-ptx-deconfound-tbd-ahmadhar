@@ -1,0 +1,124 @@
+=== bootstrap Fri Sep 25 19:49:27 UTC 2026 stages=[zenodo_models] budget=4h
+github push OK
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 24.2 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+fetched pb_base__seed0.pt
+fetched pb_base__seed1.pt
+fetched pb_base__seed2.pt
+fetched pb_base__seed3.pt
+fetched pb_base__seed4.pt
+fetched pb_bl_bandaru_auxcls__seed0.pt
+fetched pb_bl_bandaru_auxcls__seed1.pt
+fetched pb_bl_bandaru_auxcls__seed2.pt
+fetched pb_bl_bandaru_auxcls__seed3.pt
+fetched pb_bl_bandaru_auxcls__seed4.pt
+fetched pb_bl_groupdro__seed0.pt
+fetched pb_bl_groupdro__seed1.pt
+fetched pb_bl_groupdro__seed2.pt
+fetched pb_bl_groupdro__seed3.pt
+fetched pb_bl_groupdro__seed4.pt
+fetched pb_bl_raddino_ft__seed0.pt
+fetched pb_bl_raddino_ft__seed1.pt
+fetched pb_bl_raddino_ft__seed2.pt
+fetched pb_bl_raddino_ft__seed3.pt
+fetched pb_bl_raddino_ft__seed4.pt
+fetched pb_bl_raddino_probe__seed0.pt
+fetched pb_bl_raddino_probe__seed1.pt
+fetched pb_bl_raddino_probe__seed2.pt
+fetched pb_bl_raddino_probe__seed3.pt
+fetched pb_bl_raddino_probe__seed4.pt
+fetched pb_bl_segformer_b2__seed0.pt
+fetched pb_bl_segformer_b2__seed1.pt
+fetched pb_bl_segformer_b2__seed2.pt
+fetched pb_bl_unet_r34_kaggle__seed0.pt
+fetched pb_bl_unet_r34_kaggle__seed1.pt
+fetched pb_bl_unet_r34_kaggle__seed2.pt
+fetched pb_bl_unet_r34_kaggle__seed3.pt
+fetched pb_bl_unet_r34_kaggle__seed4.pt
+fetched pb_full__seed0.pt
+fetched pb_full__seed1.pt
+fetched pb_full__seed2.pt
+fetched pb_full__seed3.pt
+fetched pb_full__seed4.pt
+fetched pb_no_c2__seed0.pt
+fetched pb_no_c2__seed1.pt
+fetched pb_no_c2__seed2.pt
+fetched pb_no_c2__seed3.pt
+fetched pb_no_c2__seed4.pt
+fetched pb_no_c4__seed0.pt
+fetched pb_no_c4__seed1.pt
+fetched pb_no_c4__seed2.pt
+fetched pb_no_c4__seed3.pt
+fetched pb_no_c4__seed4.pt
+fetched pb_sens_lambda001__seed0.pt
+fetched pb_sens_lambda001__seed1.pt
+fetched pb_sens_lambda001__seed2.pt
+fetched pb_sens_lambda1__seed0.pt
+fetched pb_sens_lambda1__seed1.pt
+fetched pb_sens_lambda1__seed2.pt
+all weights present
+54 checkpoints, 7.20 GB
+[1/56] pb_base__seed0.pt already uploaded
+[2/56] pb_base__seed1.pt already uploaded
+[3/56] pb_base__seed2.pt already uploaded
+[4/56] pb_base__seed3.pt already uploaded
+[5/56] pb_base__seed4.pt already uploaded
+[6/56] pb_bl_bandaru_auxcls__seed0.pt already uploaded
+[7/56] pb_bl_bandaru_auxcls__seed1.pt already uploaded
+[8/56] pb_bl_bandaru_auxcls__seed2.pt already uploaded
+[9/56] pb_bl_bandaru_auxcls__seed3.pt already uploaded
+[10/56] pb_bl_bandaru_auxcls__seed4.pt already uploaded
+[11/56] pb_bl_groupdro__seed0.pt already uploaded
+[12/56] pb_bl_groupdro__seed1.pt already uploaded
+[13/56] pb_bl_groupdro__seed2.pt already uploaded
+[14/56] pb_bl_groupdro__seed3.pt already uploaded
+[15/56] pb_bl_groupdro__seed4.pt already uploaded
+[16/56] pb_bl_raddino_ft__seed0.pt already uploaded
+[17/56] pb_bl_raddino_ft__seed1.pt already uploaded
+[18/56] pb_bl_raddino_ft__seed2.pt already uploaded
+[19/56] pb_bl_raddino_ft__seed3.pt already uploaded
+[20/56] pb_bl_raddino_ft__seed4.pt already uploaded
+[21/56] pb_bl_raddino_probe__seed0.pt already uploaded
+[22/56] pb_bl_raddino_probe__seed1.pt already uploaded
+[23/56] pb_bl_raddino_probe__seed2.pt already uploaded
+[24/56] pb_bl_raddino_probe__seed3.pt already uploaded
+[25/56] pb_bl_raddino_probe__seed4.pt already uploaded
+[26/56] pb_bl_segformer_b2__seed0.pt already uploaded
+[27/56] pb_bl_segformer_b2__seed1.pt already uploaded
+[28/56] pb_bl_segformer_b2__seed2.pt already uploaded
+[29/56] pb_bl_unet_r34_kaggle__seed0.pt already uploaded
+[30/56] pb_bl_unet_r34_kaggle__seed1.pt already uploaded
+[31/56] pb_bl_unet_r34_kaggle__seed2.pt already uploaded
+[32/56] pb_bl_unet_r34_kaggle__seed3.pt already uploaded
+[33/56] pb_bl_unet_r34_kaggle__seed4.pt already uploaded
+[34/56] pb_full__seed0.pt already uploaded
+[35/56] pb_full__seed1.pt already uploaded
+[36/56] pb_full__seed2.pt already uploaded
+[37/56] pb_full__seed3.pt already uploaded
+[38/56] pb_full__seed4.pt already uploaded
+[39/56] pb_no_c2__seed0.pt already uploaded
+[40/56] pb_no_c2__seed1.pt already uploaded
+[41/56] pb_no_c2__seed2.pt already uploaded
+[42/56] pb_no_c2__seed3.pt already uploaded
+[43/56] pb_no_c2__seed4.pt already uploaded
+[44/56] pb_no_c4__seed0.pt already uploaded
+[45/56] pb_no_c4__seed1.pt already uploaded
+[46/56] pb_no_c4__seed2.pt already uploaded
+[47/56] pb_no_c4__seed3.pt already uploaded
+[48/56] pb_no_c4__seed4.pt already uploaded
+[49/56] pb_sens_lambda001__seed0.pt already uploaded
+[50/56] pb_sens_lambda001__seed1.pt already uploaded
+[51/56] pb_sens_lambda001__seed2.pt already uploaded
+[52/56] pb_sens_lambda1__seed0.pt already uploaded
+[53/56] pb_sens_lambda1__seed1.pt already uploaded
+[54/56] pb_sens_lambda1__seed2.pt already uploaded
+[55/56] manifest.csv already uploaded
+[56/56] MODEL_CARD.md already uploaded
+deposition 22966372: 56 files, 7.20 GB
+DRAFT ready for review (not published): https://zenodo.org/deposit/22966372
+== [zenodo_models] for i in $(seq 3); do python scripts/fetch_weights.py --runs results/runs && break; sleep 60; done; python scripts/upload_zenodo.py --runs results/runs
+queue finished
+54 weight files
+=== finished Fri Sep 25 19:57:05 UTC 2026
