@@ -9,6 +9,7 @@
 #   STAGES           default "data gate1_nih"   (e.g. "gate1", "tube_labels main", "gate2")
 #   MAX_HOURS        wall-clock budget for the queue (default 10)
 #   STOP_WHEN_DONE   1 (default) -> the pod stops itself when finished, so billing stops
+#   ZENODO_TOKEN     Zenodo personal token (RunPod secret "zenodo"), only for stage zenodo_models
 set -uo pipefail
 STAGES="${STAGES:-data gate1_nih}"
 MAX_HOURS="${MAX_HOURS:-10}"

@@ -72,3 +72,7 @@ stages:
     - {command: "python -m ptx.eval.acceptance --spec configs/acceptance_planb.yaml --runs results/runs --out results/planb"}
   paper_figs:       # manuscript figures only (no training, no new metrics)
     - {command: "for i in $(seq 3); do python scripts/fetch_weights.py --runs results/runs && break; sleep 60; done; python scripts/render_paper_figs.py --data {data}"}
+  zenodo_models:    # upload the 54 checkpoints to a Zenodo DRAFT (needs RunPod secret 'zenodo' as ZENODO_TOKEN)
+    - {command: "for i in $(seq 3); do python scripts/fetch_weights.py --runs results/runs && break; sleep 60; done; python scripts/upload_zenodo.py --runs results/runs"}
+  paper_build:      # regenerate the manuscript figures from committed data (CPU only)
+    - {command: "cd paper && python make_figures.py && python make_figures2.py && python make_figures3.py && cd .. && git add paper/figures"}

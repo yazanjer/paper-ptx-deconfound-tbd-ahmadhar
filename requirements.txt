@@ -13,6 +13,7 @@ imagehash
 pydicom
 pyyaml
 tqdm
+matplotlib
 tabulate
 requests
 kaggle

@@ -1,0 +1,7 @@
+Highlights
+
+- Pre-registered, frozen-before-testing evaluation of twelve pneumothorax models (54 runs).
+- Gradient-reversal debiasing with pseudo device labels enlarged the device shortcut.
+- Every model, including a radiology foundation model, detected treated cases more easily.
+- In eight of twelve models a device alone raised the pneumothorax score in negatives.
+- The adversary reached chance in training, yet device information remained recoverable.
