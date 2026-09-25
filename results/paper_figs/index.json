@@ -1,0 +1,162 @@
+[
+ {
+  "name": "untreated_tp",
+  "dataset": "nih",
+  "image_id": "00028421_004",
+  "ptx": 1,
+  "treated": 0,
+  "scores": {
+   "pb_full": 0.9706257104873657,
+   "pb_no_c2": 0.9965613603591919,
+   "pb_no_c4": 0.9998208522796631,
+   "pb_base": 0.9749445915222168,
+   "pb_bl_unet_r34_kaggle": 0.9701380133628845,
+   "pb_bl_segformer_b2": 0.9877882401148478,
+   "pb_bl_groupdro": 0.8644513130187989
+  }
+ },
+ {
+  "name": "untreated_fn",
+  "dataset": "nih",
+  "image_id": "00002146_007",
+  "ptx": 1,
+  "treated": 0,
+  "scores": {
+   "pb_full": 0.0031876180786639453,
+   "pb_no_c2": 0.0028722031274810433,
+   "pb_no_c4": 0.00151461535228305,
+   "pb_base": 0.08600364055536927,
+   "pb_bl_unet_r34_kaggle": 0.0744592510163784,
+   "pb_bl_segformer_b2": 0.023238372212896746,
+   "pb_bl_groupdro": 0.03486544759944081
+  }
+ },
+ {
+  "name": "device_pos",
+  "dataset": "nih",
+  "image_id": "00021381_003",
+  "ptx": 1,
+  "treated": 1,
+  "scores": {
+   "pb_full": 0.7144995123147965,
+   "pb_no_c2": 0.9841234683990479,
+   "pb_no_c4": 0.4521172303706408,
+   "pb_base": 0.4563149983529001,
+   "pb_bl_unet_r34_kaggle": 0.9747711420059204,
+   "pb_bl_segformer_b2": 0.9891257882118225,
+   "pb_bl_groupdro": 0.547264469973743
+  }
+ },
+ {
+  "name": "device_neg_fp",
+  "dataset": "nih",
+  "image_id": "00030651_002",
+  "ptx": 0,
+  "treated": 1,
+  "scores": {
+   "pb_full": 0.5064157173037529,
+   "pb_no_c2": 0.3723575580865145,
+   "pb_no_c4": 0.3263260036706924,
+   "pb_base": 0.1954276656555521,
+   "pb_bl_unet_r34_kaggle": 0.5203235268592834,
+   "pb_bl_segformer_b2": 0.8747322956720988,
+   "pb_bl_groupdro": 0.5800441622734069
+  }
+ },
+ {
+  "name": "clean_neg",
+  "dataset": "nih",
+  "image_id": "00016562_000",
+  "ptx": 0,
+  "treated": 0,
+  "scores": {
+   "pb_full": 0.0043949511833488945,
+   "pb_no_c2": 0.002795453439466655,
+   "pb_no_c4": 0.000983514564950383,
+   "pb_base": 0.03475735564762702,
+   "pb_bl_unet_r34_kaggle": 0.004160560667514801,
+   "pb_bl_segformer_b2": 0.0004536383591281871,
+   "pb_bl_groupdro": 0.011947090178728104
+  }
+ },
+ {
+  "name": "siim_pos1",
+  "dataset": "siim",
+  "image_id": "1.2.276.0.7230010.3.1.4.8323329.4320.1517875182.271396",
+  "ptx": 1,
+  "treated": 1,
+  "scores": {
+   "pb_full": 0.9923472046852112,
+   "pb_no_c2": 0.9987411618232727,
+   "pb_no_c4": 0.996405565738678,
+   "pb_base": 0.9994922876358032,
+   "pb_bl_unet_r34_kaggle": 0.9778016209602356,
+   "pb_bl_segformer_b2": 0.9928644895553589,
+   "pb_bl_groupdro": 0.9716448903083801
+  }
+ },
+ {
+  "name": "siim_pos2",
+  "dataset": "siim",
+  "image_id": "1.2.276.0.7230010.3.1.4.8323329.31772.1517875156.758919",
+  "ptx": 1,
+  "treated": 0,
+  "scores": {
+   "pb_full": 0.15023811981081964,
+   "pb_no_c2": 0.28866209778934715,
+   "pb_no_c4": 0.5425049126148224,
+   "pb_base": 0.3579306748288218,
+   "pb_bl_unet_r34_kaggle": 0.40669436752796173,
+   "pb_bl_segformer_b2": 0.25313159450888634,
+   "pb_bl_groupdro": 0.23150066286325455
+  }
+ },
+ {
+  "name": "ptx498_SiteA",
+  "dataset": "ptx498",
+  "image_id": "SiteA_158",
+  "ptx": 1,
+  "treated": -1,
+  "scores": {
+   "pb_full": 0.8658308804035186,
+   "pb_no_c2": 0.9924867510795593,
+   "pb_no_c4": 0.9999378442764282,
+   "pb_base": 0.9153586149215698,
+   "pb_bl_unet_r34_kaggle": 0.9776823282241821,
+   "pb_bl_segformer_b2": 0.9927028218905131,
+   "pb_bl_groupdro": 0.9517174005508423
+  }
+ },
+ {
+  "name": "ptx498_SiteB",
+  "dataset": "ptx498",
+  "image_id": "SiteB_149",
+  "ptx": 1,
+  "treated": -1,
+  "scores": {
+   "pb_full": 0.6001734018325806,
+   "pb_no_c2": 0.8097034215927124,
+   "pb_no_c4": 0.28777330964803693,
+   "pb_base": 0.17060082219541073,
+   "pb_bl_unet_r34_kaggle": 0.21036128140985966,
+   "pb_bl_segformer_b2": 0.31653988113005954,
+   "pb_bl_groupdro": 0.29020267594605687
+  }
+ },
+ {
+  "name": "ptx498_SiteC",
+  "dataset": "ptx498",
+  "image_id": "SiteC_11",
+  "ptx": 1,
+  "treated": -1,
+  "scores": {
+   "pb_full": 0.2003276922274381,
+   "pb_no_c2": 0.21700756297213958,
+   "pb_no_c4": 0.08220829544588923,
+   "pb_base": 0.11347995966990716,
+   "pb_bl_unet_r34_kaggle": 0.4433282636106014,
+   "pb_bl_segformer_b2": 0.9348638455073038,
+   "pb_bl_groupdro": 0.16543787959963083
+  }
+ }
+]
