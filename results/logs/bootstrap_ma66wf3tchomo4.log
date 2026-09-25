@@ -285,3 +285,54 @@ external done: results/runs/pb_no_c4/seed2
 command failed: python -m ptx.evaluate_external --runs results/runs
 54 weight files
 === finished Thu Sep 24 23:24:38 UTC 2026
+Runpod config file not found, please run `runpodctl config` to create it
+pod "ma66wf3tchomo4" stopped
+=== bootstrap Fri Sep 25 00:14:44 UTC 2026 stages=[planb_gate2] budget=4h
+github push OK
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 24.2 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+frozen: 0c4f0c756a62034aa48f8ec275c1a344f4c43ec384a8d27854a0923e5aa3afa5
+{'patient_overlap': {'test_internal&train': 0, 'test_internal&val': 0, 'train&val': 0}, 'train_test_near_duplicates': 4, 'pass': False}
+00:15:37 finished runs: 54/54
+all weights present
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+external done: results/runs/pb_no_c4/seed3
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+external done: results/runs/pb_no_c4/seed4
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+external done: results/runs/pb_sens_lambda001/seed0
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+external done: results/runs/pb_sens_lambda001/seed1
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+external done: results/runs/pb_sens_lambda001/seed2
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+external done: results/runs/pb_sens_lambda1/seed0
+/workspace/ptx-deconfound/ptx/evaluate_external.py:40: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m.load_state_dict(torch.load(od / "best.pt", map_location=dev))
+external done: results/runs/pb_sens_lambda1/seed1
+external done: results/runs/pb_sens_lambda1/seed2
+{
+  "primary_pass": false,
+  "secondary_passed": 0,
+  "sanity_pass": false,
+  "ACCEPTED_AS_POSITIVE": false
+}
+== [planb_gate2] bash scripts/freeze_prereg.sh
+== [planb_gate2] mkdir -p results/planb && python -m ptx.data.leakage --data /workspace/data --splits splits --dev siim --out results/planb/leakage_check.json
+== [planb_gate2] python scripts/wait_runs.py --expect 54 --prefix pb_ --hours 5
+== [planb_gate2] for i in $(seq 12); do python scripts/fetch_weights.py --runs results/runs && exit 0; sleep 300; done; exit 1
+== [planb_gate2] python -m ptx.evaluate_external --runs results/runs
+== [planb_gate2] python -m ptx.eval.acceptance --spec configs/acceptance_planb.yaml --runs results/runs --out results/planb
+queue finished
+54 weight files
+=== finished Fri Sep 25 00:18:05 UTC 2026
