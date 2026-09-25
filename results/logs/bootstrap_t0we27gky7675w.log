@@ -1,0 +1,9 @@
+=== bootstrap Fri Sep 25 18:26:54 UTC 2026 stages=[paper_build zenodo_models] budget=6h
+github push OK
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 24.2 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+figures written: ['fig2_shortcut.pdf', 'fig3_paired.pdf', 'fig4_seeds.pdf']
+ok
+ok ['untreated_tp', 'untreated_fn', 'device_pos', 'device_neg_fp', 'clean_neg', 'siim_pos1', 'siim_pos2', 'ptx498_SiteA', 'ptx498_SiteB', 'ptx498_SiteC'] ['pb_full', 'pb_no_c2', 'pb_base', 'pb_bl_segformer_b2', 'pb_bl_groupdro']
