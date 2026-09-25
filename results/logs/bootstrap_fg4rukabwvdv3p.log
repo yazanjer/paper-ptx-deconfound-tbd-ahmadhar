@@ -1,0 +1,6 @@
+=== bootstrap Fri Sep 25 07:11:09 UTC 2026 stages=[data planb_prep paper_figs] budget=4h
+To https://github.com/yazanjer/ptx-deconfound.git
+ ! [remote rejected] HEAD -> main (cannot lock ref 'refs/heads/main': is at 897502f5190aded30bf3428ebc73151932a5601a but expected caea3db57f81dfe7d36f64ad1f20957088b8844b)
+error: failed to push some refs to 'https://github.com/yazanjer/ptx-deconfound.git'
+FATAL: GitHub push failed - check github_token has Contents read/write
+=== finished Fri Sep 25 07:11:18 UTC 2026
