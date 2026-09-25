@@ -7,3 +7,7 @@ results/runs/**/feats_*.npz
 /data/
 /raw/
 .pytest_cache/
+*.safetensors
+*.part
+*.pt.part
+results/runs/
