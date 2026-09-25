@@ -1,0 +1,235 @@
+{
+  "criteria": {
+    "A1": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "nih",
+            "split": "test"
+          },
+          "proposed": 0.2222222222222222,
+          "best_baseline": "pb_bl_segformer_b2",
+          "baseline": 0.2777777777777778,
+          "diff": -0.05555555555555558,
+          "ci": [
+            -0.14285714285714285,
+            0.0
+          ],
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "A2": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "nih",
+            "split": "test"
+          },
+          "gap_proposed": 0.25820943517572736,
+          "gap_baseline": 0.08568282702177843,
+          "baseline": "pb_bl_groupdro",
+          "reduction": -2.0135494375097704,
+          "sens_gap_proposed": 0.3283395755305868,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "A3": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "nih",
+            "split": "test"
+          },
+          "auc_proposed": 0.6952861952861953,
+          "best_baseline": "pb_bl_raddino_probe",
+          "auc_baseline": 0.8161475869809204,
+          "diff": -0.1208613916947251,
+          "p_holm": 0.04611643304497059,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "A7": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "nih",
+            "split": "test"
+          },
+          "T": 1.5642015933990479,
+          "ece": 0.09695562265294297,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "A8": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "nih",
+            "split": "test"
+          },
+          "per_seed": [
+            0.2222222222222222,
+            0.2222222222222222,
+            0.08333333333333333,
+            0.25,
+            0.25
+          ],
+          "sd": 0.06972166887783963,
+          "wins_vs_best_baseline_mean": 0,
+          "n_seeds": 5,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "A4": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "siim",
+            "split": "test_internal"
+          },
+          "n_small": 225,
+          "proposed": 0.6355555555555555,
+          "best_baseline": "pb_bl_segformer_b2",
+          "baseline": 0.6933333333333334,
+          "diff": -0.05777777777777782,
+          "win": false,
+          "pass": false
+        },
+        {
+          "set": {
+            "dataset": "ptx498",
+            "split": "test"
+          },
+          "n_small": 161,
+          "proposed": 0.40372670807453415,
+          "best_baseline": "pb_bl_segformer_b2",
+          "baseline": 0.6335403726708074,
+          "diff": -0.22981366459627328,
+          "win": false,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "A5": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "siim",
+            "split": "test_internal"
+          },
+          "dice_proposed": 0.45995651539327953,
+          "best_baseline": "pb_bl_segformer_b2",
+          "dice_baseline": 0.4987963774929664,
+          "lower_bound_diff": -0.05349410358512941,
+          "pass": false
+        },
+        {
+          "set": {
+            "dataset": "ptx498",
+            "split": "test"
+          },
+          "dice_proposed": 0.4783491540366264,
+          "best_baseline": "pb_bl_segformer_b2",
+          "dice_baseline": 0.7305050462893897,
+          "lower_bound_diff": -0.2756541695805908,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "A6": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "siim",
+            "split": "test_internal"
+          },
+          "n": 461,
+          "rule": "BTS rim >= 20 mm",
+          "kappa": 0.3749212230009741,
+          "pass": false
+        },
+        {
+          "set": {
+            "dataset": "ptx498",
+            "split": "test"
+          },
+          "n": 426,
+          "rule": "area-fraction tertiles",
+          "kappa": 0.4777123633305298,
+          "pass": false
+        }
+      ],
+      "pass": false
+    }
+  },
+  "sanity": {
+    "occlusion": {
+      "per_set": [],
+      "pass": false
+    },
+    "device_probe": {
+      "per_set": [
+        {
+          "set": {
+            "dataset": "nih",
+            "split": "test"
+          },
+          "proposed": 0.9004421102605187,
+          "baselines": {
+            "pb_bl_unet_r34_kaggle": 0.8453385555753368,
+            "pb_no_c2": 0.9188801851522165,
+            "pb_bl_segformer_b2": 0.8848733012877573,
+            "pb_bl_groupdro": 0.9094534448994125,
+            "pb_bl_bandaru_auxcls": 0.972957094534449,
+            "pb_bl_raddino_probe": 0.965254287579372,
+            "pb_bl_raddino_ft": 0.9596848851700198
+          },
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "leakage": {
+      "patient_overlap": {
+        "test_internal&train": 0,
+        "test_internal&val": 0,
+        "train&val": 0
+      },
+      "train_test_near_duplicates": 4,
+      "pass": false
+    }
+  },
+  "notes": [],
+  "ablation_verdicts": [
+    {
+      "ablation": "pb_no_c2",
+      "positive": false
+    },
+    {
+      "ablation": "pb_no_c4",
+      "positive": false
+    },
+    {
+      "ablation": "pb_base",
+      "positive": false
+    }
+  ],
+  "overall": {
+    "primary_pass": false,
+    "secondary_passed": 0,
+    "sanity_pass": false,
+    "ACCEPTED_AS_POSITIVE": false
+  }
+}
