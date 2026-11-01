@@ -13,7 +13,7 @@ from pathlib import Path
 
 import requests
 
-REPO = "yazanjer/ptx-deconfound"
+REPO = os.environ.get("GH_REPO", "yazanjer/paper-ptx-deconfound-tbd-ahmadhar")
 ap = argparse.ArgumentParser()
 ap.add_argument("--runs", type=Path, default=Path("results/runs"))
 ap.add_argument("--tag", default="weights-v1")
