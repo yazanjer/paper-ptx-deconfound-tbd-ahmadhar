@@ -1,0 +1,4 @@
+run,seed,dataset,n,max_abs_logit_diff,auroc_now,auroc_stored
+pb_bl_segformer_b2,seed1,siim,2134,0.01706242561340332,0.952262267995256,0.9522584667159988
+pb_bl_segformer_b2,seed1,nih,24,0.016903698444366455,,
+pb_bl_segformer_b2,seed1,ptx498,482,0.010664328932762146,,
