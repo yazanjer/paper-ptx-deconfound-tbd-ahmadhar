@@ -1,0 +1,4 @@
+run,seed,dataset,n,max_abs_logit_diff,auroc_now,auroc_stored
+pb_bl_raddino_probe,seed3,siim,2134,0.00390625,0.9153676850716161,0.9153683186181589
+pb_bl_raddino_probe,seed3,nih,24,0.00390625,,
+pb_bl_raddino_probe,seed3,ptx498,482,0.00390625,,

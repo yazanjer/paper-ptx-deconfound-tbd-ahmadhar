@@ -1,0 +1,1622 @@
+{
+ "pb_full__seed0|siim": {
+  "device": {
+   "image_cv": 0.9591193056092245,
+   "image_cv_std": 0.9530376789518644,
+   "patient_cv": 0.9604086104605849,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8742108435646077,
+   "image_cv_std": 0.8727832238824911,
+   "patient_cv": 0.8748612036420165,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9496254472838592,
+   "image_cv_std": 0.9502007075447789,
+   "patient_cv": 0.9482493841927604,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_full__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_full__seed1|siim": {
+  "device": {
+   "image_cv": 0.9355787322708888,
+   "image_cv_std": 0.9335193999212196,
+   "patient_cv": 0.9351717311022807,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8580628787157767,
+   "image_cv_std": 0.8698962596364328,
+   "patient_cv": 0.8585387519431491,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9388703611722131,
+   "image_cv_std": 0.9386080729034679,
+   "patient_cv": 0.9387588569806692,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_full__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_full__seed2|siim": {
+  "device": {
+   "image_cv": 0.958867619829097,
+   "image_cv_std": 0.953709464788785,
+   "patient_cv": 0.9604451002205293,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9360109133593478,
+   "image_cv_std": 0.9241775324386917,
+   "patient_cv": 0.9402144602011357,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9405454582315436,
+   "image_cv_std": 0.9413335901308653,
+   "patient_cv": 0.9387727950046122,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_full__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_full__seed3|siim": {
+  "device": {
+   "image_cv": 0.9372937509882644,
+   "image_cv_std": 0.9331254976407967,
+   "patient_cv": 0.9397834753783005,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9036673963389488,
+   "image_cv_std": 0.900336283747343,
+   "patient_cv": 0.9019225278385837,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9355303037982383,
+   "image_cv_std": 0.9382000689298639,
+   "patient_cv": 0.9354935580987522,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_full__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_full__seed4|siim": {
+  "device": {
+   "image_cv": 0.9346299985123405,
+   "image_cv_std": 0.9286550342302017,
+   "patient_cv": 0.9360952027193292,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9122331144316488,
+   "image_cv_std": 0.9120427651406999,
+   "patient_cv": 0.9127724374226707,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9347637124813738,
+   "image_cv_std": 0.9344520075822851,
+   "patient_cv": 0.9343620439731986,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_full__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c2__seed0|siim": {
+  "device": {
+   "image_cv": 0.9507865414537707,
+   "image_cv_std": 0.9487505999758606,
+   "patient_cv": 0.9520328071010944,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9225278385838013,
+   "image_cv_std": 0.9237016592113195,
+   "patient_cv": 0.9285714285714286,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9467896929580035,
+   "image_cv_std": 0.9441249961987207,
+   "patient_cv": 0.9446875855287834,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c2__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c2__seed1|siim": {
+  "device": {
+   "image_cv": 0.9448368393131319,
+   "image_cv_std": 0.9432930417770324,
+   "patient_cv": 0.9453102705575354,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9128834745090575,
+   "image_cv_std": 0.9098854731766125,
+   "patient_cv": 0.9064909108213571,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9507189486168411,
+   "image_cv_std": 0.9508900061834143,
+   "patient_cv": 0.9493276804087136,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c2__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c2__seed2|siim": {
+  "device": {
+   "image_cv": 0.9504684255978474,
+   "image_cv_std": 0.9483370493631601,
+   "patient_cv": 0.9505601178151429,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9182291170965388,
+   "image_cv_std": 0.912169664667999,
+   "patient_cv": 0.922860949842962,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9450930553162158,
+   "image_cv_std": 0.9421229891232729,
+   "patient_cv": 0.9423979483228756,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c2__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c2__seed3|siim": {
+  "device": {
+   "image_cv": 0.9568008024004648,
+   "image_cv_std": 0.9565463097157262,
+   "patient_cv": 0.9569243062033528,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9128517496272326,
+   "image_cv_std": 0.9118841407315756,
+   "patient_cv": 0.9089495891627803,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9459787533831384,
+   "image_cv_std": 0.9383039705628935,
+   "patient_cv": 0.9449612776353002,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c2__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c2__seed4|siim": {
+  "device": {
+   "image_cv": 0.9611168860574497,
+   "image_cv_std": 0.9581836707388616,
+   "patient_cv": 0.9627593930723723,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9196567367786556,
+   "image_cv_std": 0.9212271184289839,
+   "patient_cv": 0.9244789188160275,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9440312313103769,
+   "image_cv_std": 0.9413792054819516,
+   "patient_cv": 0.9440236287518626,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c2__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c4__seed0|siim": {
+  "device": {
+   "image_cv": 0.9441865730782295,
+   "image_cv_std": 0.9435138516064382,
+   "patient_cv": 0.9477775397106829,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9128358871863202,
+   "image_cv_std": 0.9094254623901527,
+   "patient_cv": 0.9162780368643129,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9447572756484983,
+   "image_cv_std": 0.94627778735137,
+   "patient_cv": 0.9429732085837955,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c4__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c4__seed1|siim": {
+  "device": {
+   "image_cv": 0.9442651664073398,
+   "image_cv_std": 0.9442735871211732,
+   "patient_cv": 0.9443727644174317,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9228768122838743,
+   "image_cv_std": 0.9166270105643857,
+   "patient_cv": 0.9295073125852605,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.946235973279541,
+   "image_cv_std": 0.9472825921683511,
+   "patient_cv": 0.9446115599436398,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c4__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c4__seed2|siim": {
+  "device": {
+   "image_cv": 0.9382406134770718,
+   "image_cv_std": 0.9364769417464373,
+   "patient_cv": 0.9407247240578858,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9049522540528536,
+   "image_cv_std": 0.899638336347197,
+   "patient_cv": 0.9071412708987658,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.951377837021419,
+   "image_cv_std": 0.9530567353600065,
+   "patient_cv": 0.9512992772501039,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c4__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c4__seed3|siim": {
+  "device": {
+   "image_cv": 0.9561168533102293,
+   "image_cv_std": 0.9546946883072776,
+   "patient_cv": 0.9593597637709079,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9232575108657721,
+   "image_cv_std": 0.9114241299451159,
+   "patient_cv": 0.9289838520351512,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9386144083688964,
+   "image_cv_std": 0.9377806611184885,
+   "patient_cv": 0.9364286727960183,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c4__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_no_c4__seed4|siim": {
+  "device": {
+   "image_cv": 0.9520328071010945,
+   "image_cv_std": 0.9511018504050832,
+   "patient_cv": 0.9546189018827781,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9033660099616129,
+   "image_cv_std": 0.8926429999048253,
+   "patient_cv": 0.9099171980584373,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9508931739161286,
+   "image_cv_std": 0.9520430608914253,
+   "patient_cv": 0.9492998043608275,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_no_c4__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_base__seed0|siim": {
+  "device": {
+   "image_cv": 0.9558361628491203,
+   "image_cv_std": 0.9552186438346808,
+   "patient_cv": 0.9551222734430334,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9096792614447512,
+   "image_cv_std": 0.9041591320072333,
+   "patient_cv": 0.9178008311919038,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9485129395545915,
+   "image_cv_std": 0.9470405773889774,
+   "patient_cv": 0.9487334137515078,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_base__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_base__seed1|siim": {
+  "device": {
+   "image_cv": 0.9586121915094878,
+   "image_cv_std": 0.9561767339419326,
+   "patient_cv": 0.9587824770558938,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9153104279686559,
+   "image_cv_std": 0.912201389549824,
+   "patient_cv": 0.9209574569334729,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9441148594540348,
+   "image_cv_std": 0.9408495605721179,
+   "patient_cv": 0.9413133166414938,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_base__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_base__seed2|siim": {
+  "device": {
+   "image_cv": 0.9628562312814549,
+   "image_cv_std": 0.9604647485528068,
+   "patient_cv": 0.9658184512810246,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9233526855112464,
+   "image_cv_std": 0.9204022715015386,
+   "patient_cv": 0.9326956632086547,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9416528975884684,
+   "image_cv_std": 0.9379314451956898,
+   "patient_cv": 0.9410675005828628,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_base__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_base__seed3|siim": {
+  "device": {
+   "image_cv": 0.961235711685986,
+   "image_cv_std": 0.9563647965508757,
+   "patient_cv": 0.9633521177627473,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9344722565908442,
+   "image_cv_std": 0.9279845182576696,
+   "patient_cv": 0.9381840677643476,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9362132669714447,
+   "image_cv_std": 0.9298423229364123,
+   "patient_cv": 0.9330860812358719,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_base__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_base__seed4|siim": {
+  "device": {
+   "image_cv": 0.9481527292936985,
+   "image_cv_std": 0.9469130130904674,
+   "patient_cv": 0.9494719744609106,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9029535864978903,
+   "image_cv_std": 0.894419593287015,
+   "patient_cv": 0.9075695568034009,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9447458718107267,
+   "image_cv_std": 0.9436358982676303,
+   "patient_cv": 0.9415122502559529,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_base__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_sens_lambda001__seed0|siim": {
+  "device": {
+   "image_cv": 0.9531125297414935,
+   "image_cv_std": 0.9535373079726382,
+   "patient_cv": 0.9553019153381431,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9116462041178897,
+   "image_cv_std": 0.918467053710225,
+   "patient_cv": 0.9094254623901527,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9492478535443128,
+   "image_cv_std": 0.9473535493811518,
+   "patient_cv": 0.9478236409159563,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_sens_lambda001__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_sens_lambda001__seed1|siim": {
+  "device": {
+   "image_cv": 0.9304842004017616,
+   "image_cv_std": 0.9213505327972769,
+   "patient_cv": 0.93383003069818,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8854097268487675,
+   "image_cv_std": 0.8748294787601916,
+   "patient_cv": 0.876986770724279,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9450271664757579,
+   "image_cv_std": 0.9442136927147217,
+   "patient_cv": 0.9450347690342722,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_sens_lambda001__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_sens_lambda001__seed2|siim": {
+  "device": {
+   "image_cv": 0.960248616897753,
+   "image_cv_std": 0.9595075940804252,
+   "patient_cv": 0.9618204834799631,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9260017131436185,
+   "image_cv_std": 0.9262237873163923,
+   "patient_cv": 0.9284603914850417,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9455796190611347,
+   "image_cv_std": 0.9439995539832339,
+   "patient_cv": 0.9446343676191827,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_sens_lambda001__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_sens_lambda1__seed0|siim": {
+  "device": {
+   "image_cv": 0.9254841676545411,
+   "image_cv_std": 0.9181609535242092,
+   "patient_cv": 0.9277240775341902,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8611401922527838,
+   "image_cv_std": 0.8518765267599379,
+   "patient_cv": 0.8489737000729674,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.941918987136471,
+   "image_cv_std": 0.9421977476153308,
+   "patient_cv": 0.9400753666967391,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_sens_lambda1__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_sens_lambda1__seed1|siim": {
+  "device": {
+   "image_cv": 0.9437159487384366,
+   "image_cv_std": 0.9420411623204867,
+   "patient_cv": 0.9453186912713687,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9100916849084737,
+   "image_cv_std": 0.9047301798800799,
+   "patient_cv": 0.9171821959963199,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9294571266383513,
+   "image_cv_std": 0.924035235324528,
+   "patient_cv": 0.9270496497754711,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_sens_lambda1__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_sens_lambda1__seed2|siim": {
+  "device": {
+   "image_cv": 0.9359062044755158,
+   "image_cv_std": 0.9154541618442485,
+   "patient_cv": 0.938431482990626,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8679769042860317,
+   "image_cv_std": 0.8574918308429301,
+   "patient_cv": 0.865740300117382,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9383546542863225,
+   "image_cv_std": 0.9334535382307326,
+   "patient_cv": 0.9401995418191401,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_sens_lambda1__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_unet_r34_kaggle__seed0|siim": {
+  "device": {
+   "image_cv": 0.9069838593628514,
+   "image_cv_std": 0.9375023975643553,
+   "patient_cv": 0.9073646627550891,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9290235081374322,
+   "image_cv_std": 0.9335363725770122,
+   "patient_cv": 0.927143808889312,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9233167935449209,
+   "image_cv_std": 0.9302908738887593,
+   "patient_cv": 0.9221700743023385,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_unet_r34_kaggle__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_unet_r34_kaggle__seed1|siim": {
+  "device": {
+   "image_cv": 0.9186839734167421,
+   "image_cv_std": 0.9386681986128277,
+   "patient_cv": 0.9193379821911261,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.915595951905079,
+   "image_cv_std": 0.9244947812569398,
+   "patient_cv": 0.9142159195456997,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9326349960973532,
+   "image_cv_std": 0.9276831963183344,
+   "patient_cv": 0.9325779769084956,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_unet_r34_kaggle__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_unet_r34_kaggle__seed2|siim": {
+  "device": {
+   "image_cv": 0.9147290448197172,
+   "image_cv_std": 0.926906332657493,
+   "patient_cv": 0.9149676317116598,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9153738777323055,
+   "image_cv_std": 0.9249865169252245,
+   "patient_cv": 0.9132483106500429,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9447826175102128,
+   "image_cv_std": 0.9476183718360686,
+   "patient_cv": 0.944688852621869,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_unet_r34_kaggle__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_unet_r34_kaggle__seed3|siim": {
+  "device": {
+   "image_cv": 0.9023711794519611,
+   "image_cv_std": 0.9224470968653425,
+   "patient_cv": 0.9022336411260177,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8740363567145714,
+   "image_cv_std": 0.912280701754386,
+   "patient_cv": 0.8749405158465785,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9341212962869104,
+   "image_cv_std": 0.9359661838197282,
+   "patient_cv": 0.933173510658787,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_unet_r34_kaggle__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_unet_r34_kaggle__seed4|siim": {
+  "device": {
+   "image_cv": 0.9127913450031953,
+   "image_cv_std": 0.9404627462941841,
+   "patient_cv": 0.9144988786416078,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9065384981440945,
+   "image_cv_std": 0.9157545763142032,
+   "patient_cv": 0.9021446020113575,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.941247427801036,
+   "image_cv_std": 0.9382862312596933,
+   "patient_cv": 0.9407367892874883,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_unet_r34_kaggle__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_segformer_b2__seed0|siim": {
+  "device": {
+   "image_cv": 0.9402980745570004,
+   "image_cv_std": 0.9549997052750159,
+   "patient_cv": 0.942186185725393,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9000031724881825,
+   "image_cv_std": 0.9214809174835824,
+   "patient_cv": 0.9011769931157008,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9551119603450547,
+   "image_cv_std": 0.9488056380573943,
+   "patient_cv": 0.955851942707119,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_segformer_b2__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_segformer_b2__seed1|siim": {
+  "device": {
+   "image_cv": 0.9343680207486389,
+   "image_cv_std": 0.951776443146615,
+   "patient_cv": 0.9365695695986032,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8893753370768692,
+   "image_cv_std": 0.9146124805685099,
+   "patient_cv": 0.8922147140001904,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9529046841897195,
+   "image_cv_std": 0.9414552310670952,
+   "patient_cv": 0.9533823782830383,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_segformer_b2__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_segformer_b2__seed2|siim": {
+  "device": {
+   "image_cv": 0.9172646153184012,
+   "image_cv_std": 0.9501381464886092,
+   "patient_cv": 0.9189693420522028,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8709273182957394,
+   "image_cv_std": 0.9272548459756987,
+   "patient_cv": 0.868310015545192,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.950941956999929,
+   "image_cv_std": 0.9486143070014496,
+   "patient_cv": 0.9508900061834143,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_segformer_b2__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_groupdro__seed0|siim": {
+  "device": {
+   "image_cv": 0.935911818284738,
+   "image_cv_std": 0.9448471312967057,
+   "patient_cv": 0.9346749089861178,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.8882332413311761,
+   "image_cv_std": 0.8946416674597886,
+   "patient_cv": 0.8918974651819424,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9441617418982069,
+   "image_cv_std": 0.9443023892307225,
+   "patient_cv": 0.9422826428520744,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_groupdro__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_groupdro__seed1|siim": {
+  "device": {
+   "image_cv": 0.9462131582074359,
+   "image_cv_std": 0.94563119331807,
+   "patient_cv": 0.9489508258381183,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9029377240569779,
+   "image_cv_std": 0.9012563053202627,
+   "patient_cv": 0.9082992290853716,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9446559082016401,
+   "image_cv_std": 0.9431721421982544,
+   "patient_cv": 0.9440388338688913,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_groupdro__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_groupdro__seed2|siim": {
+  "device": {
+   "image_cv": 0.9520561979728533,
+   "image_cv_std": 0.9502129972782382,
+   "patient_cv": 0.9528037702342735,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9342025950953333,
+   "image_cv_std": 0.9331239491132897,
+   "patient_cv": 0.9404048094920846,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9470760559953776,
+   "image_cv_std": 0.9459039948910808,
+   "patient_cv": 0.9443986883052377,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_groupdro__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_groupdro__seed3|siim": {
+  "device": {
+   "image_cv": 0.9606967860006568,
+   "image_cv_std": 0.9591698298922242,
+   "patient_cv": 0.9614976894496876,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9220361029155166,
+   "image_cv_std": 0.9191650011103708,
+   "patient_cv": 0.9198629485105169,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9453147966062179,
+   "image_cv_std": 0.9453996918429616,
+   "patient_cv": 0.941455231067095,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_groupdro__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_groupdro__seed4|siim": {
+  "device": {
+   "image_cv": 0.9669421487603306,
+   "image_cv_std": 0.9653656040037687,
+   "patient_cv": 0.9684634910595409,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9121855271089115,
+   "image_cv_std": 0.915278703086831,
+   "patient_cv": 0.9143745439548236,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9396394866752491,
+   "image_cv_std": 0.938018874618605,
+   "patient_cv": 0.9398257493588509,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_groupdro__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_bandaru_auxcls__seed0|siim": {
+  "device": {
+   "image_cv": 0.9898670743539675,
+   "image_cv_std": 0.9901898683842427,
+   "patient_cv": 0.9904597990443427,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9403730846102598,
+   "image_cv_std": 0.9317756416357349,
+   "patient_cv": 0.9442435201928874,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.944364476791923,
+   "image_cv_std": 0.9464146334046285,
+   "patient_cv": 0.9446660449463259,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_bandaru_auxcls__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_bandaru_auxcls__seed1|siim": {
+  "device": {
+   "image_cv": 0.9916354242589539,
+   "image_cv_std": 0.9911750919027351,
+   "patient_cv": 0.9919881586050807,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9572507217410616,
+   "image_cv_std": 0.954157545763142,
+   "patient_cv": 0.9497319247485804,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9445608762202106,
+   "image_cv_std": 0.9422991150621889,
+   "patient_cv": 0.9442314320179218,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_bandaru_auxcls__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_bandaru_auxcls__seed2|siim": {
+  "device": {
+   "image_cv": 0.9899849643476334,
+   "image_cv_std": 0.990144022275595,
+   "patient_cv": 0.9913668970511595,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9326798007677423,
+   "image_cv_std": 0.9283334919577425,
+   "patient_cv": 0.9280638304622315,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9454757174281051,
+   "image_cv_std": 0.9464273043354857,
+   "patient_cv": 0.941669369798583,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_bandaru_auxcls__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_bandaru_auxcls__seed3|siim": {
+  "device": {
+   "image_cv": 0.9879677355671305,
+   "image_cv_std": 0.9888902715493085,
+   "patient_cv": 0.9892972727179165,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.937961993591574,
+   "image_cv_std": 0.9325529012404429,
+   "patient_cv": 0.9333936106088006,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9467073319074311,
+   "image_cv_std": 0.9490881998155112,
+   "patient_cv": 0.9486231766530497,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_bandaru_auxcls__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_bandaru_auxcls__seed4|siim": {
+  "device": {
+   "image_cv": 0.9910225834188658,
+   "image_cv_std": 0.9919235997990256,
+   "patient_cv": 0.9914099362551962,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9356936645410997,
+   "image_cv_std": 0.9341074204498588,
+   "patient_cv": 0.93563021477745,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.946680722952631,
+   "image_cv_std": 0.951479204468277,
+   "patient_cv": 0.9471204042533781,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_bandaru_auxcls__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_probe__seed0|siim": {
+  "device": {
+   "image_cv": 0.977919952694301,
+   "image_cv_std": 0.9735322929697332,
+   "patient_cv": 0.9789631855747558,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9821706164144539,
+   "image_cv_std": 0.9827416642873006,
+   "patient_cv": 0.9827892516100377,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.8917294300108464,
+   "image_cv_std": 0.8613914202592978,
+   "patient_cv": 0.8882854710038419,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_probe__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_probe__seed1|siim": {
+  "device": {
+   "image_cv": 0.977919952694301,
+   "image_cv_std": 0.9735322929697332,
+   "patient_cv": 0.9789631855747558,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9821706164144539,
+   "image_cv_std": 0.9827416642873006,
+   "patient_cv": 0.9827892516100377,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.8917294300108464,
+   "image_cv_std": 0.8613914202592978,
+   "patient_cv": 0.8882854710038419,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_probe__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_probe__seed2|siim": {
+  "device": {
+   "image_cv": 0.977919952694301,
+   "image_cv_std": 0.9735322929697332,
+   "patient_cv": 0.9789631855747558,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9821706164144539,
+   "image_cv_std": 0.9827416642873006,
+   "patient_cv": 0.9827892516100377,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.8917294300108464,
+   "image_cv_std": 0.8613914202592978,
+   "patient_cv": 0.8882854710038419,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_probe__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_probe__seed3|siim": {
+  "device": {
+   "image_cv": 0.977919952694301,
+   "image_cv_std": 0.9735322929697332,
+   "patient_cv": 0.9789631855747558,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9821706164144539,
+   "image_cv_std": 0.9827416642873006,
+   "patient_cv": 0.9827892516100377,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.8917294300108464,
+   "image_cv_std": 0.8613914202592978,
+   "patient_cv": 0.8882854710038419,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_probe__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_probe__seed4|siim": {
+  "device": {
+   "image_cv": 0.977919952694301,
+   "image_cv_std": 0.9735322929697332,
+   "patient_cv": 0.9789631855747558,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9821706164144539,
+   "image_cv_std": 0.9827416642873006,
+   "patient_cv": 0.9827892516100377,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.8917294300108464,
+   "image_cv_std": 0.8613914202592978,
+   "patient_cv": 0.8882854710038419,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_probe__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_ft__seed0|siim": {
+  "device": {
+   "image_cv": 0.9672668140603464,
+   "image_cv_std": 0.9660027713504861,
+   "patient_cv": 0.970592060389617,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9663716252656959,
+   "image_cv_std": 0.9648488309381048,
+   "patient_cv": 0.9677675200659878,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9095751690302175,
+   "image_cv_std": 0.9080926701199177,
+   "patient_cv": 0.9122297290448146,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_ft__seed0|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_ft__seed1|siim": {
+  "device": {
+   "image_cv": 0.9729807362136541,
+   "image_cv_std": 0.9727458918611929,
+   "patient_cv": 0.9739051434655728,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9549506678087624,
+   "image_cv_std": 0.9534754608039084,
+   "patient_cv": 0.9578693569366457,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.8996310224934364,
+   "image_cv_std": 0.8964202086142056,
+   "patient_cv": 0.9008436305764767,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_ft__seed1|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_ft__seed2|siim": {
+  "device": {
+   "image_cv": 0.9744777520062352,
+   "image_cv_std": 0.9737184843089354,
+   "patient_cv": 0.9758016753477988,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9725579772215347,
+   "image_cv_std": 0.9736842105263158,
+   "patient_cv": 0.9739380095809143,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9001074494936694,
+   "image_cv_std": 0.8982232820751943,
+   "patient_cv": 0.9055736890654935,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_ft__seed2|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_ft__seed3|siim": {
+  "device": {
+   "image_cv": 0.9597003348637201,
+   "image_cv_std": 0.9573415993555348,
+   "patient_cv": 0.9617966247907686,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.956568636781828,
+   "image_cv_std": 0.9570445100092002,
+   "patient_cv": 0.9642460581834333,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.9085944389818654,
+   "image_cv_std": 0.905066851831203,
+   "patient_cv": 0.914173449838319,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_ft__seed3|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ },
+ "pb_bl_raddino_ft__seed4|siim": {
+  "device": {
+   "image_cv": 0.9603917690329185,
+   "image_cv_std": 0.9598972860039314,
+   "patient_cv": 0.9648977865685874,
+   "n": 2134,
+   "n_pos": 1331
+  },
+  "drain": {
+   "image_cv": 0.9640715713333968,
+   "image_cv_std": 0.9630722375559152,
+   "patient_cv": 0.9637384600742362,
+   "n": 503,
+   "n_pos": 237
+  },
+  "drain_n_labelled": 503,
+  "ptx": {
+   "image_cv": 0.914663814862495,
+   "image_cv_std": 0.9126516710423617,
+   "patient_cv": 0.9094028443705587,
+   "n": 2134,
+   "n_pos": 476
+  }
+ },
+ "pb_bl_raddino_ft__seed4|nih": {
+  "device": null,
+  "drain": null,
+  "drain_n_labelled": 0,
+  "ptx": null
+ }
+}

@@ -25,7 +25,7 @@ BL = [("pb_bl_unet_r34_kaggle", "U-Net ResNet34", "#2a78d6", "-"), ("pb_bl_segfo
       ("pb_bl_groupdro", "Group DRO", "#1baf7a", "-"), ("pb_bl_bandaru_auxcls", "Aux. device cls", "#8e5bd0", "-"),
       ("pb_bl_raddino_probe", "RAD-DINO probe", "#b8860b", "--"), ("pb_bl_raddino_ft", "RAD-DINO fine-tuned", INK, "--")]
 METRICS = [("cls", "Train cls. loss"), ("val_auroc", "Validation AUROC"),
-           ("val_sens95_untreated", "Val. untreated sens."), ("val_dice_pos", "Val. Dice (positives)")]
+           ("val_sens95_untreated", "Val. device-absent sens."), ("val_dice_pos", "Val. Dice (positives)")]
 
 
 def band(ax, run, key, col, ls, lab=None):
@@ -95,8 +95,8 @@ SEC = {  # SIIM AUROC, SIIM Dice, PTX-498 sens, PTX-498 Dice (Table secondary)
     "pb_bl_bandaru_auxcls": (0.956, 0.523, 0.643, 0.699), "pb_bl_raddino_probe": (0.915, np.nan, 0.382, np.nan),
     "pb_bl_raddino_ft": (0.949, np.nan, 0.635, np.nan)}
 ROWS = [(r, l) for r, l, *_ in FAM] + [(r, l) for r, l, *_ in BL]
-COLS = [("NIH\nAUROC", 1), ("NIH untr.\nAUROC", 1), ("NIH device\nAUROC", 0), ("Gap", -1), ("Device-in-\nscore", -1),
-        ("Oracle sens.\nuntreated", 1), ("SIIM\nAUROC", 1), ("SIIM\nDice", 1), ("PTX-498\nsens.", 1), ("PTX-498\nDice", 1)]
+COLS = [("NIH\nAUROC", 1), ("NIH dev.-abs.\nAUROC", 1), ("NIH device\nAUROC", 0), ("Gap", -1), ("Device-in-\nscore", -1),
+        ("Oracle sens.\ndev.-abs.", 1), ("SIIM\nAUROC", 1), ("SIIM\nDice", 1), ("PTX-498\nsens.", 1), ("PTX-498\nDice", 1)]
 M = np.full((len(ROWS), len(COLS)), np.nan)
 for i, (r, _) in enumerate(ROWS):
     a = A[r]

@@ -1,0 +1,13 @@
+run,seeds,epochs,total_min,min_per_epoch,bs
+pb_base,5,20.0,45.339,2.267,16
+pb_bl_bandaru_auxcls,5,20.0,45.102,2.255,16
+pb_bl_groupdro,5,20.0,45.283,2.264,16
+pb_bl_raddino_ft,5,20.0,49.941,2.497,16
+pb_bl_raddino_probe,5,20.0,19.892,0.995,32
+pb_bl_segformer_b2,3,20.0,41.656,2.083,16
+pb_bl_unet_r34_kaggle,5,20.0,27.11,1.355,16
+pb_full,5,20.0,45.55,2.277,16
+pb_no_c2,5,20.0,45.021,2.251,16
+pb_no_c4,5,20.0,45.914,2.296,16
+pb_sens_lambda001,3,20.0,45.436,2.272,16
+pb_sens_lambda1,3,20.0,45.449,2.272,16

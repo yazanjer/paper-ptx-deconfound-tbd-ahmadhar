@@ -1,0 +1,4 @@
+run,seed,dataset,n,max_abs_logit_diff,auroc_now,auroc_stored
+pb_bl_bandaru_auxcls,seed3,siim,2134,0.03125,0.9343785161833129,0.9343633110662843
+pb_bl_bandaru_auxcls,seed3,nih,24,0.015625,,
+pb_bl_bandaru_auxcls,seed3,ptx498,482,0.015625,,

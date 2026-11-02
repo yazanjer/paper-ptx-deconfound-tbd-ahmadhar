@@ -1,0 +1,2 @@
+run,params_M,trainable_M,GFLOPs_fwd,latency_ms_bs1,img_per_s_bs1,peak_mem_GB_infer_bs1,latency_ms_bs16,img_per_s_bs16,peak_mem_GB_infer_bs16,train_batch,train_step_ms,peak_mem_GB_train
+pb_no_c2,20.22614,20.22614,18.684989792,16.397857666015625,60.98357604801563,0.241315328,36.971962451934814,432.76036593406985,1.737137664,16,145.9369659423828,12.355397632

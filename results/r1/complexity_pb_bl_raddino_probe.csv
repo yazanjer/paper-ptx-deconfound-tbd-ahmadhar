@@ -1,0 +1,2 @@
+run,params_M,trainable_M,GFLOPs_fwd,latency_ms_bs1,img_per_s_bs1,peak_mem_GB_infer_bs1,latency_ms_bs16,img_per_s_bs16,peak_mem_GB_infer_bs16,train_batch,train_step_ms,peak_mem_GB_train
+pb_bl_raddino_probe,86.581249,0.000769,117.113437872,9.136760234832764,109.44798531405303,0.414040064,55.60120344161987,287.76355563597957,1.109641728,32,109.56144332885742,1.984981504

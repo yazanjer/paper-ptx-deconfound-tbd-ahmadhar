@@ -1,0 +1,4 @@
+run,seed,dataset,n,max_abs_logit_diff,auroc_now,auroc_stored
+pb_no_c2,seed2,siim,2134,0.017578125,0.9382171746865211,0.9382418830016928
+pb_no_c2,seed2,nih,24,0.009765625,,
+pb_no_c2,seed2,ptx498,482,0.01416015625,,

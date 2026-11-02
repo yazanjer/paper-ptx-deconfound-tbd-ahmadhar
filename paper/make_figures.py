@@ -63,7 +63,7 @@ ax.set_xlim(0.55, 1.0)
 ax.set_xlabel("AUROC vs all negatives\n(95% CI)")
 ax.set_title("a  Detection by device stratum", loc="left")
 ax.plot([], [], "o", color=BLUE, ms=4, label="Device-present positives")
-ax.plot([], [], "s", color=ORANGE, ms=4, label="Untreated positives")
+ax.plot([], [], "s", color=ORANGE, ms=4, label="Device-absent positives")
 
 ax = axes[1]
 for i, r in enumerate(runs):
@@ -71,8 +71,8 @@ for i, r in enumerate(runs):
     ax.errorbar(g[0], i, xerr=[[g[0] - g[1]], [g[2] - g[0]]], fmt="o", ms=4, color=INK if groups[i] == "prop" else MUTED, lw=1, capsize=0)
 ax.axvline(0, color=MUTED, lw=0.6)
 style_y(ax, labels, groups)
-ax.set_xlabel("AUC gap\n(device $-$ untreated)")
-ax.set_title("b  Device$-$untreated gap", loc="left")
+ax.set_xlabel("AUC gap\n(device $-$ device-absent)")
+ax.set_title("b  Device$-$device-absent gap", loc="left")
 
 ax = axes[2]
 for i, r in enumerate(runs):
@@ -92,7 +92,7 @@ plt.close(fig)
 comp = [o for o in ORDER if o[0] != "pb_full"]
 fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.9), sharey=True)
 for ax, key, title, xl in [
-    (axes[0], "auc_untr", "a  Untreated AUROC: proposed $-$ comparator", "Difference (95% CI)"),
+    (axes[0], "auc_untr", "a  Device-absent AUROC: proposed $-$ comparator", "Difference (95% CI)"),
     (axes[1], "gap", "b  AUC gap: proposed $-$ comparator", "Difference (95% CI; >0 = larger gap)"),
 ]:
     for i, (r, lab, g) in enumerate(comp):
@@ -134,7 +134,7 @@ ax.set_xticklabels([SHORT[o[0]] for o in order4], fontsize=7)
 for t, o in zip(ax.get_xticklabels(), order4):
     if o[2] == "prop":
         t.set_fontweight("bold")
-ax.set_ylabel("Untreated sensitivity\n(NIH test, 36 positives)")
+ax.set_ylabel("Device-absent sensitivity\n(NIH test, 36 positives)")
 ax.set_ylim(0, 0.4)
 ax.grid(axis="y", color=GRID, lw=0.6)
 ax.set_axisbelow(True)

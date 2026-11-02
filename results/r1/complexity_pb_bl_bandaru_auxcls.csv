@@ -1,0 +1,2 @@
+run,params_M,trainable_M,GFLOPs_fwd,latency_ms_bs1,img_per_s_bs1,peak_mem_GB_infer_bs1,latency_ms_bs16,img_per_s_bs16,peak_mem_GB_infer_bs16,train_batch,train_step_ms,peak_mem_GB_train
+pb_bl_bandaru_auxcls,20.226589,20.226589,18.684990688,17.074549198150635,58.56669996935035,0.24132096,36.88371181488037,433.79581969147034,1.737143296,16,146.29387855529785,12.36134144

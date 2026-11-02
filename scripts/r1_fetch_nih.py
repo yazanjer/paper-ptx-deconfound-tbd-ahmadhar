@@ -4,6 +4,7 @@
 """
 import argparse
 import os
+import time
 import zipfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -27,9 +28,16 @@ api.authenticate()
 
 
 def get(path: str, dest: Path) -> bool:
-    try:
-        api.dataset_download_file(DS, path, path=str(dest), quiet=True)
-    except Exception:  # noqa: BLE001
+    for attempt in range(4):
+        try:
+            api.dataset_download_file(DS, path, path=str(dest), quiet=True)
+            break
+        except BaseException as e:  # kaggle may raise SystemExit on HTTP errors (e.g. 429)
+            msg = str(e)
+            if "404" in msg or "not found" in msg.lower():
+                return False
+            time.sleep(5 * (attempt + 1))
+    else:
         return False
     name = Path(path).name
     z = dest / (name + ".zip")
@@ -54,11 +62,14 @@ def one(iid):
     return iid, False
 
 
-with ThreadPoolExecutor(8) as ex:
-    res = list(ex.map(one, ids))
-miss = [i for i, ok in res if not ok]
-print(f"nih {a.split}: {len(ids) - len(miss)}/{len(ids)} images; missing {miss[:10]}")
 meta = a.raw.parent / "Data_Entry_2017.csv"
 if not meta.exists():
     get("Data_Entry_2017.csv", a.raw.parent)
-print("metadata:", meta.exists())
+print("metadata:", meta.exists(), flush=True)
+res = []
+for k, iid in enumerate(ids):
+    res.append(one(iid))
+    if k % 50 == 0:
+        print(f"nih fetch {k}/{len(ids)} ok={sum(r[1] for r in res)}", flush=True)
+miss = [i for i, ok in res if not ok]
+print(f"nih {a.split}: {len(ids) - len(miss)}/{len(ids)} images; missing {miss[:10]}")

@@ -1,0 +1,2 @@
+run,params_M,trainable_M,GFLOPs_fwd,latency_ms_bs1,img_per_s_bs1,peak_mem_GB_infer_bs1,latency_ms_bs16,img_per_s_bs16,peak_mem_GB_infer_bs16,train_batch,train_step_ms,peak_mem_GB_train
+pb_bl_unet_r34_kaggle,24.436884,24.436884,31.34390272,5.602777004241943,178.48292003106417,0.275226624,21.995556354522705,727.4196543207735,1.83013376,16,86.93933486938477,4.24011008

@@ -28,7 +28,7 @@ def outline(ax, m, color="#e8412c"):
 
 
 DEV = {0: "no device", 1: "device"}
-TITLES = {"untreated_tp": "NIH untreated PTX\n(highest score)", "untreated_fn": "NIH untreated PTX\n(lowest score)",
+TITLES = {"untreated_tp": "NIH device-absent PTX\n(highest score)", "untreated_fn": "NIH device-absent PTX\n(lowest score)",
           "device_pos": "NIH PTX with device\n(median score)", "device_neg_fp": "NIH no PTX, device\n(highest score)",
           "clean_neg": "NIH no PTX, no device\n(median score)"}
 
