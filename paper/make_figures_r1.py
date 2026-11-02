@@ -88,7 +88,7 @@ ax.legend(loc="lower left", frameon=False, bbox_to_anchor=(0, 1.0), ncol=2, hand
 ax.set_xlabel("Device $-$ device-absent AUROC\n(SIIM-ACR internal test, pseudo-labels)")
 ax.set_title("b  Gap within reference-mask size tertiles", loc="left", pad=46)
 fig.tight_layout(w_pad=1.0)
-save(fig, "fig_r1_strata")
+save(fig, "fig_posthoc_strata")
 
 # ---------------- Figure R1: threshold transfer (score distributions)
 fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.3))
@@ -112,7 +112,7 @@ ax.set_xlim(0, 1); ax.set_ylim(0, 1)
 ax.set_xlabel("SIIM-ACR validation"); ax.set_ylabel("NIH test")
 ax.set_title("c  95th percentile of negative scores", loc="left")
 fig.tight_layout(w_pad=0.8)
-save(fig, "fig_r1_threshold")
+save(fig, "fig_posthoc_threshold")
 
 # ---------------- Figure R1: top-k overlap (if the GPU summary exists)
 G = ROOT / "results/r1/gpu_summary.json"
@@ -140,5 +140,5 @@ if G.exists():
     axes[0].plot([], [], "|", color=MUTED, ms=8, mew=1, label="Mask area (chance)")
     fig.legend(*axes[0].get_legend_handles_labels(), loc="upper center", ncol=4, frameon=False, bbox_to_anchor=(0.55, 1.05))
     fig.tight_layout(rect=(0, 0, 1, 0.95))
-    save(fig, "fig_r1_topk")
+    save(fig, "fig_posthoc_topk")
 print("ok")

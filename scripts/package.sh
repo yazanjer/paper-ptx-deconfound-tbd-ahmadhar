@@ -8,5 +8,5 @@ mkdir -p $O/src/figures && for f in $(grep -o 'figures/[A-Za-z0-9_]*\.pdf' main.
 (cd $O/src && zip -qr ../Main_Manuscript_LaTeX_Access-2026-49559.zip .)
 rm -rf $O/src
 cd $HOME/work && python3 build_response.py >/dev/null && cp Response_to_Reviewers_Access-2026-49559.docx $O/
-mkdir -p $O/new_figures_png && cp $HOME/ptx-deconfound/paper/figures/fig_r1_*.png $O/new_figures_png/
+mkdir -p $O/new_figures_png && cp $HOME/ptx-deconfound/paper/figures/fig_posthoc_*.png $O/new_figures_png/
 ls -la $O $O/new_figures_png
