@@ -303,7 +303,10 @@ Let $h=\GAP(F_5)\in\mathbb{R}^{c}$ be the globally average-pooled deepest featur
 \paragraph{C4: mask pooling}
 The image-level logit is computed from the segmentation map alone:
 \begin{equation}
-s(x) = a\cdot\frac{1}{k}\sum_{(i,j)\in\topk(Z)} Z_{ij} + b,\qquad k=\max\big(1,\lfloor\rho HW\rfloor\big),\ \rho=0.005,
+\begin{aligned}
+s(x) &= a\cdot\frac{1}{k}\sum_{(i,j)\in\topk(Z)} Z_{ij} + b,\\
+k &=\max\big(1,\lfloor\rho HW\rfloor\big),\quad \rho=0.005,
+\end{aligned}
 \label{eq:maskpool}
 \end{equation}
 where $\topk(Z)$ indexes the $k$ largest pixel logits ($k=1{,}310$ at 512~px) and $a,b$ are learned scalars initialised to $1$ and $0$. Without C4, a global head is used instead: $s(x)=w^\top \mathrm{Dropout}(h)+b$.
@@ -483,7 +486,8 @@ where $v_{(1)}\le\dots\le v_{(n_0)}$ are the sorted validation scores of the $n_
 The two primary endpoints, both on the NIH test set, were device-absent sensitivity at the threshold transferred from SIIM-ACR validation and the device--device-absent AUROC gap. Secondary endpoints were device-absent AUROC (paired DeLong test with Holm correction across baselines \cite{delong1988,holm1979}), sensitivity for small pneumothorax, Dice, agreement of the predicted size class (weighted $\kappa$), calibration after temperature scaling (15-bin ECE \cite{guo2017calibration}) and seed-to-seed stability. Each was compared with the strongest re-trained baseline for that dataset and metric, chosen from U-Net ResNet34, the C4-only EfficientNet-B4 U-Net, SegFormer-B2, Group DRO, the auxiliary device classifier and both RAD-DINO variants; segmentation endpoints used only the segmentation baselines. \Cref{alg:eval} gives the evaluation procedure. With $P_{\text{dev}}$, $P_{\text{abs}}$ and $N$ the device-present positives, device-absent positives and all negatives, the stratified quantities are
 \begin{align}
 \Delta_{\text{gap}} &= \AUC(P_{\text{dev}},N)-\AUC(P_{\text{abs}},N), \label{eq:gap}\\
-\AUC_{\text{dev}\mid y=0} &= \Pr\big[\bar p(x^{+})>\bar p(x^{-})\big],\quad x^{+}\in N_{\text{dev}},\ x^{-}\in N_{\text{none}}, \label{eq:devscore}
+\AUC_{\text{dev}\mid y=0} &= \Pr\big[\bar p(x^{+})>\bar p(x^{-})\big], \label{eq:devscore}\\
+&\qquad x^{+}\in N_{\text{dev}},\ x^{-}\in N_{\text{none}}, \nonumber
 \end{align}
 where $\AUC(A,B)$ is the probability that a random member of $A$ scores above a random member of $B$ (ties count one half). \Cref{eq:gap} is a primary endpoint. \Cref{eq:devscore}, the \emph{device-in-score} AUROC, is exploratory: a value above 0.5 means that a device alone raises the pneumothorax score in images without pneumothorax.
 
@@ -557,7 +561,7 @@ Protocol frozen & \texttt{1432ac215d9d} & 24 Sep 23:08 & SHA-256 of \texttt{PRER
 First external evaluation & \texttt{58daf122c7f3} & 24 Sep 23:24 & External predictions written once per model (pre-specified primary, secondary and sanity analyses) \\
 Acceptance report & \texttt{8e6566e50aba} & 25 Sep 00:18 & Pre-specified pass/fail evaluation \\
 Exploratory, original submission & --- & after 25 Sep & Stratified AUROCs, paired differences, device-in-score, oracle threshold, curves, maps \\
-Exploratory, revision & \texttt{r1-ieee} branch & Nov & Analyses (i)--(ix) above \\
+Exploratory, revision & \texttt{6f9c09e2f31f} & 2 Nov & Analyses (i)--(ix) above (branch \texttt{r1-ieee}) \\
 \bottomrule
 \end{tabularx}
 \end{table*}
@@ -598,7 +602,7 @@ All 54 runs completed. The proposed model did not improve on the strongest compa
 \toprule
 Model & AUROC & \multicolumn{2}{c}{AUROC vs all negatives} & Gap & Device-in- & \multicolumn{2}{c}{At transferred thr.} \\
 \cmidrule(lr){3-4}\cmidrule(l){7-8}
- & & Device-absent & Device & (\cref{eq:gap}) & score & Sens.\ untr. & Spec. \\
+ & & Device-absent & Device & (\cref{eq:gap}) & score & Sens.\ dev.-abs. & Spec. \\
 \midrule
 \rowcolor{band}\textbf{Proposed (C2+C4)} & 0.879 & 0.695 \ci{0.58}{0.81} & 0.954 & 0.258 \ci{0.15}{0.37} & 0.710 & 0.222 & 1.000 \\
 C4 only & 0.881 & 0.745 \ci{0.65}{0.84} & 0.936 & 0.191 \ci{0.09}{0.29} & 0.592 & 0.250 & 1.000 \\
@@ -626,7 +630,7 @@ RAD-DINO fine-tuned & 0.908 & 0.803 \ci{0.70}{0.89} & 0.951 & 0.148 \ci{0.05}{0.
 \toprule
  & \multicolumn{5}{c}{SIIM-ACR internal test} & \multicolumn{2}{c}{PTX-498} \\
 \cmidrule(lr){2-6}\cmidrule(l){7-8}
-Model & AUROC & Sens. & Spec. & Sens.\ untr. & Dice & Sens. & Dice \\
+Model & AUROC & Sens. & Spec. & Sens.\ dev.-abs. & Dice & Sens. & Dice \\
 \midrule
 \rowcolor{band}\textbf{Proposed (C2+C4)} & 0.957 & 0.708 & \textbf{0.963} & 0.548 & 0.460 & 0.693 & 0.478 \\
 C4 only & 0.957 & 0.721 & 0.960 & 0.548 & 0.453 & 0.734 & 0.496 \\
