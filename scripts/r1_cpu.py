@@ -241,6 +241,7 @@ if pairs is not None:
     dev_pat = set(pm[pm.split.isin(["train", "val"])].nih_patient)
     keep = ~n.image_id.str[:8].isin(dev_pat)
     J["patient_overlap_mapped_subset"]["nih_test_dropped"] = int((~keep).sum())
+    J["patient_overlap_mapped_subset"]["nih_test_patients_with_mapped_dev_image"] = len(nih_test_pat & dev_pat)
     sens_rows = {}
     for r in RUNS:
         d = L["nih"][r]["df"]; k = ~d.image_id.str[:8].isin(dev_pat)
