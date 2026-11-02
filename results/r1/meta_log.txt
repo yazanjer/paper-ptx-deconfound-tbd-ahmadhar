@@ -1,0 +1,16 @@
+=== meta start Mon Nov  2 01:58:59 UTC 2026
+debconf: delaying package configuration, since apt-utils is not installed
+[notice] To update, run: python -m pip install --upgrade pip
+Dataset URL: https://www.kaggle.com/datasets/nih-chest-xrays/data
+License(s): CC0-1.0
+Downloading Data_Entry_2017.csv.zip to /w
+  0%|          | 0.00/924k [00:00<?, ?B/s]100%|██████████| 924k/924k [00:00<00:00, 5.72MB/s]100%|██████████| 924k/924k [00:00<00:00, 5.71MB/s]
+
+total 936
+drwxr-xr-x  3 root root     80 Nov  2 01:59 .
+drwxr-xr-x  1 root root    118 Nov  2 01:58 ..
+-rw-r--r--  1 root root 946387 Sep 25  2019 Data_Entry_2017.csv.zip
+-rw-r--r--  1 root root    494 Nov  2 01:59 log.txt
+drwxr-xr-x 12 root root   4096 Nov  2 01:59 repo
+data entry rows 4388
+cohort columns ['image_id', 'patient_key', 'class_label', 'split', 'visible_device_status', 'annotation_resolution', 'patient_sex', 'view_position', 'age_numeric']

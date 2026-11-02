@@ -39,6 +39,8 @@ for r in RUNS:
         per = []
         for f in fs:
             d = pd.read_csv(f)
+            if "topk_in_gt" not in d:
+                continue
             d = d[(d.ptx == 1) & d.topk_in_gt.notna()]
             per.append({k: d[k].mean() for k in ("topk_in_gt", "topk_in_gt_dil", "argmax_in_gt", "argmax_in_gt_dil",
                                                     "topk_any_in_gt", "chance_in_gt", "chance_in_gt_dil")} | {"n": len(d)})
@@ -49,6 +51,8 @@ for r in RUNS:
                 q = np.quantile(d.gt_area_frac, [1 / 3, 2 / 3]); t = np.digitize(d.gt_area_frac, q)
                 for k in range(3):
                     per[-1][f"topk_in_gt_dil_t{k}"] = d[t == k].topk_in_gt_dil.mean()
+        if not per:
+            continue
         P = pd.DataFrame(per)
         tk.setdefault(r, {})[ds] = {k: r3(P[k].mean()) for k in P.columns} | {"seeds": len(fs), "seed_sd_topk_in_gt": r3(P.topk_in_gt.std())}
 J["topk"] = tk
